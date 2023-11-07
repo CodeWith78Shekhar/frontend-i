@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architech</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        /* .container{
+            margin: 5px;
+            width: 100%;
+            height: 100%;
+            border: 2px solid black;
+        } */
+
+        .navbar{
+            
+            width: 100%;
+            height: 55px;
+            display: flex;
+           text-align: center;
+            position: fixed; 
+            background-color: rgb(246, 246, 246);
+          
+            
+        }
+
+        .A{
+             
+             margin: 2px;
+        }
+
+        .nav-box1{
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+            
+        }
+
+        
+        .B{
+           text-decoration: none;  
+           word-spacing: 10px;
+           letter-spacing: 3px;
+           
+        }
+        
+        .nav-box1 a{
+           
+            color: black;   
+        }
+        
+        .nav-box2{
+            width: 70%;
+           
+            margin: 2px;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            
+        }
+
+        .C{
+            
+             margin: 10px;  
+             text-decoration: none; 
+           word-spacing: 10px;
+           letter-spacing: 3px;
+           color: rgb(84, 82, 82);
+        }
+
+        .picture1{
+            /* border: 2px solid black; */
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url(https://www.w3schools.com/w3images/architect.jpg);
+           
+        }
+
+        .picture1 div{
+            margin: 20px;
+            font-size: 40px;
+            letter-spacing: 5px;
+        }
+        .pic1-box1{
+            
+            background-color: rgb(24, 19, 19);
+            color: aliceblue;
+        }
+
+        .pro{
+            /* border: 2px solid black; */
+            width: 100%;
+            height: 150px;
+            color: rgb(41, 38, 38);
+            padding: 50px 0px 0px 20px;
+            font-family: sans-serif;
+        }
+
+        .container2{
+            /* border: 2px solid green; */
+            width: 95%;
+            height: fit-content;
+            margin-left: 3%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            
+        }
+
+        .box{
+            /* border: 2px solid black; */
+            height: 300px;
+            width: 300px;
+            margin-top: 8px;
+           
+        }
+
+        .lol{
+            background: url(https://www.w3schools.com/w3images/house2.jpg);
+            background-size: 300px 350px;
+            background-repeat: no-repeat;
+        }
+        .lol1{
+            background: url(https://www.w3schools.com/w3images/house5.jpg);
+            background-size: 300px 350px;
+            background-repeat: no-repeat;
+        }
+        .lol2{
+            background: url(https://www.w3schools.com/w3images/house3.jpg);
+            background-size: 300px 350px;
+            background-repeat: no-repeat;
+        }
+        .lol3{
+            background: url(https://www.w3schools.com/w3images/house2.jpg);
+            background-size: 300px 350px;
+            background-repeat: no-repeat;
+        }
+        .lol4{
+            background: url(https://www.w3schools.com/w3images/house4.jpg);
+            background-size: 300px 350px;
+            background-repeat: no-repeat;
+        }
+        .lol5{
+            background: url(https://www.w3schools.com/w3images/house2.jpg);
+            background-size: 300px 350px;
+            background-repeat: no-repeat;
+        }
+        .lol6{
+            background: url(https://www.w3schools.com/w3images/house5.jpg);
+            background-size: 300px 350px;
+            background-repeat: no-repeat;
+        }
+        .lol7{
+            background: url(https://www.w3schools.com/w3images/house4.jpg);
+            background-size: 300px 350px;
+            background-repeat: no-repeat;
+        }
+
+        .Hname {
+            background-color: rgb(14, 14, 14);
+            /* border: 2px solid black; */
+            width: 60%;
+            height: 12%;
+            color: aliceblue;
+            font-size: 14px;
+            display: inline-block;
+            
+        }
+
+        
+            
+           
+            
+            
+        
+            
+        
+        .box h2{
+            margin-top: 5px;
+        }
+
+        .img1{
+            width: 100%;
+            height: 95%;
+            
+        }
+
+        .container3{
+            
+            /* width: 95%; */
+         height: fit-content;
+         width: 91%;
+         margin-left: 5%;
+         margin-top: 5%;
+         
+
+        }
+       
+        .container3 h1{
+          font-weight: 500;
+        }
+
+        .container3 p{
+            font-weight: 600;
+            margin-top: 25px;
+            
+
+        }
+
+        .container4{
+            /* border: 2px solid green; */
+            /* width: 95%; */
+         height: fit-content;
+         width: 91%;
+          margin-left: 5%;
+         margin-top: 5%; 
+         display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          
+         
+         
+        }
+      
+        .pic-boxes{
+            /* border: 2px solid black; */
+            width:330px ;
+            height: 450px;
+            margin: 5px;
+            box-sizing: border-box;
+        }
+
+        
+        .pic-boxes img{
+            width: 100%;
+            height: 60%;
+        }
+
+        .pic-boxes h2{
+            /* border: 2px solid black; */
+            margin-top: 4px;
+        }
+
+        .pic-boxes h3{
+            /* border: 2px solid black; */
+            margin-top: 4px;
+        }
+
+        .john{
+            /* border: 2px solid rgb(143, 27, 27); */
+            margin-top: 14px;
+        }
+
+        .contact{
+           display: flex;
+           justify-content: center;
+           text-decoration: none;
+            margin-top: 15px;
+            color: black;  
+        }
+
+        .contact:hover{
+            background-color:rgb(168, 166, 166);
+        }
+
+        .contact2{
+         height: fit-content;
+         width: 91%;
+          margin-left: 5%;
+          margin-top: 3%;
+        }
+
+        .para{
+            height: fit-content;
+         width: 91%;
+          margin-left: 5%;
+          margin-top: 3%;
+        }
+
+        .form{
+            height: fit-content;
+         width: 91%;
+          margin-left: 5%;
+          /* margin-top: 3%; */
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+        }
+
+        .form input{
+            margin-top: 12px;
+            height: 35px;
+            font-size: 15px;
+            text-transform: uppercase;
+        }
+
+        .btn{
+            width: fit-content;
+            margin-top: 50px;
+            padding:0px 10px;
+            background-color: black;
+            color: antiquewhite;
+            cursor: pointer;
+        }
+
+        .btn:hover{
+            background-color:grey ;
+        }
+
+        .lstPic{
+            /* width: 91%; */
+          
+          margin-top: 60px;
+          display: flex;
+        }
+
+        .lstPic img{
+            width: 91%;
+            margin: 0px 5% ;
+        }
+
+        .footer{
+            width: 100%;
+            height: 100px;
+            background-color: black;
+            color: antiquewhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer a{
+            color: antiquewhite;
+            margin: 5px;
+        }
+
+       .footer a:hover{
+        color:green;
+       }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+   
+
+        <div class="navbar">
+                <div class="nav-box1 A">
+                    <a href="###" class="B"><h3><b>BR</b> Architechs</h3></a>
+                </div>
+                <div class="nav-box2 a">
+                    <a href="###" class="C"><h3> Projects</h3></a>
+                    <a href="###" class="C"><h3> About</h3></a>
+                    <a href="###" class="C"><h3> Contacts</h3></a>
+                </div>
+        </div>
+
+        <div class="picture1">
+            <div class="pic1-box1"> <h2>BR</h2> </div>
+            <div>Architechs</div>
+        </div>
+
+        <div class="pro">
+               <h1>Projects</h1>
+        </div>
+       
+       <div class="container2">
+             <div class="box lol">
+                <div class="Hname" id="lol"><h2>Summer House</h2></div>
+                
+                
+             </div>
+             <div class="box lol1">
+                <div class="Hname"><h2>Summer House</h2></div>
+                
+             </div>
+             <div class="box lol2">
+                <div class="Hname"><h2>Summer House</h2></div>
+                
+             </div>
+             <div class="box lol3">
+                <div class="Hname "><h2>Summer House</h2></div>
+                
+             </div>
+             <div class="box lol4">
+
+                <div class="Hname "><h2>Summer House</h2></div>
+                
+             </div>
+             <div class="box lol5">
+                <div class="Hname"><h2>Summer House</h2></div>
+                
+             </div>
+             <div class="box lol6">
+                <div class="Hname"><h2>Summer House</h2></div>
+                
+             </div>
+             <div class="box lol7">
+                <div class="Hname"><h2>Summer House</h2></div>
+                
+             </div>
+            </div>
+
+            <div class="container3">
+                <h1>About</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+            </div>
+
+            <div class="container4">
+                <div class="pic-boxes">
+                    <img src="https://www.w3schools.com/w3images/team2.jpg" alt="">
+                    <h2>John Doe</h2>
+                    <h3>Ceo Founder</h3>
+                    <div class="john">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</div>
+                    
+                    <a href="###" class="contact"><h2>contact</h2></a>
+
+                </div>
+                <div class="pic-boxes">
+                    <img src="https://www.w3schools.com/w3images/team1.jpg" alt="">
+                    <h2>John Doe</h2>
+                    <h3>Ceo Founder</h3>
+                    <div class="john">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</div>
+                    <a href="###" class="contact"><h2>contact</h2></a>
+                </div>
+                <div></div>
+                <div class="pic-boxes">
+                    <img src="https://www.w3schools.com/w3images/team3.jpg" alt="">
+                    <h2>John Doe</h2>
+                    <h3>Ceo Founder</h3>
+                    <div class="john">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</div>
+                    <a href="###" class="contact"><h2>contact</h2></a>
+                </div>
+                <div></div>
+                <div class="pic-boxes">
+                    <img src="https://www.w3schools.com/w3images/team4.jpg" alt="">
+                    <h2>John Doe</h2>
+                    <h3>Ceo Founder</h3>
+                    <div class="john">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</div>
+                    <a href="###" class="contact"><h2>contact</h2></a>
+                    
+                </div>
+
+            </div>
+
+            <div class="contact2">
+                <h2>Contact</h2>
+            </div>
+
+            <h3 class="para">
+                Lets get in touch and talk about your next project.
+            </h3>
+
+
+            <form action=""  class="form">
+              <input type="text" placeholder="Name">
+              <input type="email" placeholder="Email">
+              <input type="text" placeholder="Subject">
+              <input type="text" placeholder="Message">
+              <input type="button" value="Send Message" class="btn">
+            </form>
+
+            <div class="lstPic">
+                <img src="https://www.w3schools.com/w3images/map.jpg" alt="">
+            </div>
+
+            <footer class="footer">
+                <p>Powered By</p>
+                <a href="###" title="w3.css" ">w3.css</a>
+            </footer>
+
+</html>

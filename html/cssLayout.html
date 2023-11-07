@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css layout</title>
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .container{
+             
+              width: 100%;
+              height: 800px;
+
+      }
+       
+
+      .box1{
+        width: 95%;
+        height: 12%;
+        background-color: rgb(12, 90, 158);
+        border-radius: 10px;
+        margin: auto;
+        margin-top: 10px;
+       
+      }
+
+      .box2{
+           
+           width: 95%;
+           height: 65%;
+           margin: auto;
+           display: flex;
+           align-items: center;
+          
+      }
+    
+      .a{
+        background-color: aqua;
+        
+        height: 10%;
+        border: 2px solid black;
+        margin: 5px;
+        width: 50%;
+        height: 95%;
+        border-radius: 10px;
+
+      }
+
+      .int-box1{
+        width: 30%;
+      }
+
+      .int-box2{
+        width:70% ;
+        background-color: rgb(165, 42, 83);
+      }
+
+ .box3{
+         width: 95%;
+        height: 12%;
+        background-color: rgb(210, 123, 17);
+        border-radius: 10px;
+        margin: auto;
+       
+ }
+    </style>
+</head>
+<body>
+    <div class="container">
+           <div class="box1 "></div>
+           <div class="box2">
+              <div class="int-box1 a"></div>
+              <div class="int-box2 a"></div>
+           </div>
+           <div class="box3"></div>
+    </div>
+</body>
+</html>
