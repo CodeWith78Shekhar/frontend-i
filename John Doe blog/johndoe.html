@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>john Doe Blog</title>
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            /* background-color: black; */
+        }
+
+      /* ---------section1------------- */
+         .container-1{
+            /* border: 2px solid black; */
+            width: 100%;
+            height: 90vh;
+            background-image: url(john-doe-pic1.jpg);
+            /* z-index: -1;
+            opacity: 0.5; */
+           background-repeat: no-repeat;
+           background-size: cover;
+           
+         }
+
+         .icon-bar{
+            /* border: 2px solid white; */
+            width: 20%;
+            height: 8vh;
+            margin-left: 7%;
+            display: flex;
+            justify-content: space-between;
+             
+         }
+
+         .icon-bar a{
+            /* border: 2px solid white; */
+            width: 15%;
+            height: 100%;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+          
+         }
+
+         @media (max-width:650px){
+            .icon-bar{
+                width: 50%;
+                margin: auto;
+            }
+         }
+
+         .text-container{
+            /* border: 2px solid white; */
+            width: 70%;
+            height: 60%;
+            margin-top: 5%;
+            margin-left: 8%;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+         }
+
+         .text-container h2{
+            font-size: 35px;
+         }
+
+         .text-container h1{
+            font-size: 75px;
+            color: rgb(156, 160, 160);
+         }
+
+         .text-container h3{
+            font-size: 20px;
+           
+         }
+         .text-container button{
+            width: 20vh;
+            height: 6vh;
+            border-radius: 15px;
+            border: none;
+            background-color: #f85c70;
+            border-color: #f85c70;
+            color: white;
+            margin-top: 4vh;
+         }
+
+  /* ---------------------section2------------------        */
+        .navbar{
+            /* border: 2px solid black; */
+            width: 100%;
+            height: 10vh;
+            box-shadow:0 1px 10px rgba(54, 54, 54,.18);
+        }
+
+        .navbar-main{
+            /* border: 2px solid black; */
+            height: 10vh;
+            width: 80%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 2fr;
+        }
+
+        .navbox{
+            /* border: 2px solid green; */
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 10vh;
+            
+        }
+
+        .navbox a{
+            text-decoration: none;
+            font-weight: 500;
+            color: black;
+            font-size: larger;
+        }
+
+        .anker a:nth-child(1){
+            color: #9e3643;
+        }
+
+        .navbox img{
+            width: 80%;
+            height: 18vh;
+            border: 10px solid #fff;
+            border-radius: 100%;
+            position: relative;
+            /* top: px; */
+        }
+       
+        .nav-icon{
+            position: absolute;
+            right: 15vh;
+           margin-top: 6vh;
+           font-size: larger;
+           display: none;
+        }
+
+        @media (max-width:770px){
+            .navbox{
+                display: none;
+            }
+
+            .nav-icon{
+                display: block;
+                margin-top: 3.2vh;
+                border: 0.1px solid rgb(131, 129, 129);
+                width: 35px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: rgb(83, 79, 79);
+            }
+        }
+
+        /* -------------------section3-------------------- */
+        
+    </style>
+</head>
+<body>
+    <!-- --------section1----------- -->
+    <div class="container-1">
+         <div class="icon-bar">
+             <a href="###">
+                <i class="fa-brands fa-facebook-f" aria-hidden="true" ></i>
+            </a> 
+              
+            <a href="###">
+                <i class="fa-brands fa-twitter" aria-hidden="true" ></i>
+            </a> 
+            <a href="###">
+                <i class="fa-brands fa-google" aria-hidden="true" ></i>
+            </a> 
+            <a href="###">
+                <i class="fa-brands fa-instagram" aria-hidden="true" ></i>
+            </a> 
+            <a href="###">
+                <i class="fa-brands fa-git" aria-hidden="true" ></i>
+            </a>
+         </div>
+
+
+         <div class="text-container">
+           <h2> Hello, I am</h2>
+           <h1>John Doe</h1>
+           <h3> Frond end Designer | Developer </h3>
+           <button>
+            <i class="fa-solid fa-print"></i>
+            Print resume
+           </button>
+         </div>
+    </div>
+    <!-- ---------------------section2------------------ -->
+    <div class="navbar">
+        <div class="navbar-main ">
+               <div class="navbox anker">
+                <a href="###" >Home</a>
+                <a href="###">About</a>
+                <a href="###">Resume</a>
+               </div>
+               <div class="navbox navbox2">
+                <img src="john-doe-pic2.jpg" alt="">
+               </div>
+               <div class="navbox">
+                <a href="###">Portfolio</a>
+                <a href="###">Blog</a>
+                <a href="###">Contact</a>
+               </div>
+
+               <div class="nav-icon">
+                <i class="fa-solid fa-bars"></i>
+               </div>
+        </div>
+    </div>
+
+    <!-- ---------------------section3--------------- -->
+</body>
+</html>
