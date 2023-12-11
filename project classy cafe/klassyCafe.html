@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>klassy cafe</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Poppins,sans-serif;
+      }
+
+      nav {
+        width: 100%;
+        height: 105px;
+        /* border: 2px solid black; */
+        position: fixed;
+        background-color: white;
+        z-index:999 ;
+       
+      }
+
+      .main-nav {
+        width: 95%;
+        height: 85px;
+        /* border: 2px solid black; */
+        margin-left: 3%;
+        margin-top: 16px;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      ul {
+        /* border: 2px solid black; */
+        display: flex;
+        justify-content: space-between;
+        width: 70vh;
+        margin-left: 100px;
+        margin-top: 22px;
+      }
+
+      li {
+        font-size: larger;
+        list-style-type: none;
+      }
+
+      img {
+        /* height: 55px; */
+        position: relative;
+        top: 8px;
+      }
+
+      .fa-bars {
+        position: absolute;
+        right: 45px;
+        top: 52px;
+        display: none;
+      }
+
+      li:nth-child(1) {
+        color: #fb5849 !important;
+      }
+      @media (max-width: 620px) {
+        .menu-w {
+          display: none;
+        }
+
+        .fa-bars {
+          display: block;
+        }
+      }
+
+      .menu-feature {
+        /* border: 2px solid black; */
+        width: 90px;
+        padding-left: 9px;
+        height: 100px;
+        background-color: #fb5849;
+        position: absolute;
+        top: 70px;
+        /* visibility: hidden;  */
+        display: none;
+      }
+
+      .option:hover .menu-feature {
+        /* visibility: visible; */
+        display: block;
+        background-color: aliceblue;
+      }
+
+      .container1 {
+        /* border: 2px solid black; */
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: center;
+           align-items: center; */
+      }
+
+      .cont1-box1 {
+        /* border: 2px solid green; */
+        width: 40%;
+        height: 40rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        background-image: url(classy\ cafe\ img2.jpg);
+        z-index: -1;
+        opacity: 1.5;
+      }
+
+      .inBox1 {
+        /* border: 2px solid black; */
+        height: 10rem;
+        width: 15rem;
+        font-size: larger;
+        margin-top: 19vh;
+      }
+
+      .inBox1 h1 {
+        font-style: italic;
+        color: white;
+      }
+      .inBox1 h3 {
+        color: white;
+      }
+
+      .inBox1 a {
+        text-decoration: none;
+       color: #fb5849;
+        background-color: antiquewhite;
+        
+      }
+      .cont1-box2 {
+        /* border: 2px solid black; */
+        width: 60%;
+        height: 40rem;
+      }
+
+      .cont1-box2 img {
+        width: 100%;
+        height: 40rem;
+        position: relative;
+        top: -1px;
+        display: inline-block;
+        z-index: -1;
+      }
+
+      @media (max-width: 600px) {
+        .cont1-box2 {
+          min-width: 100%;
+          max-height: 25rem;
+        }
+
+        .cont1-box1 {
+          min-width: 100%;
+          max-height: 25rem;
+        }
+
+        .cont1-box2 img {
+          min-width: 100%;
+          max-height: 25rem;
+        }
+      }
+
+      .container2 {
+        /* border: 2px solid rgb(207, 14, 14); */
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+      }
+
+      
+
+      .cont2-box {
+        /* border: 2px solid black; */
+        height: 85%;
+        width: 40%;
+        box-sizing: border-box;
+      }
+
+      @media (max-width:755px){
+        .cont2-box{
+          width: 80%;
+          margin-bottom: 10px;
+          margin-top: 10px;
+        }
+      }
+
+      .line {
+        border: 2px solid orangered;
+        margin-top: 3px;
+        height: 2px;
+        width: 25px;
+        display: inline-block;
+      }
+
+      .iner-box1 h3 {
+        display: inline-block;
+        margin-top: 8px;
+        margin-left: 5px;
+        color: orangered;
+      }
+
+      .iner-box1 h2 {
+        margin-top: 7px;
+       
+        word-wrap: break-word;
+      }
+
+      .iner-box1 h4 {
+        margin-top: 20px;
+        /* overflow-y:scroll ;
+        word-wrap: break-word; */
+      }
+
+      .small-cont {
+        /* border: 2px solid black; */
+        height: 20%;
+        margin-top:35px;
+        display: flex;
+        justify-content: space-between;
+        
+      }
+
+      .small-cont div {
+        /* border: 2px solid green; */
+        width: 30%;
+        height: 100%;
+        box-sizing: border-box;
+      }
+      .small-cont div img {
+        width: 100%;
+        height: 100px;
+      }
+
+      .cont2-box img {
+        width: 100%;
+        height: 100%;
+        margin-top: -8px;
+      }
+
+      .iner3-box {
+        /* border: 2px solid black; */
+        width: 100%;
+        height: 200px;
+      }
+
+      .line-2 {
+        border: 2px solid orangered;
+        margin-top: 10px;
+        height: 2px;
+        width: 25px;
+        display: inline-block;
+      }
+
+      .line-2 span {
+        display: inline-block;
+        /* position: absolute;  */
+      }
+
+      .box1 {
+        margin-top: 100px;
+        font-size: larger;
+        font-weight: 800;
+        color: #fb5849;
+        margin-left: 5%;
+      }
+
+      .box2 {
+        margin-top: 15px;
+        font-size: larger;
+        margin-left: 5%;
+      }
+
+      .container-3{
+        /* border: 2px solid black; */
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: last baseline;
+      }
+
+     
+
+      .cont-3-box{
+        /* border: 2px solid green; */
+        width: 23%;
+        height: 40vh;
+        overflow: hidden;
+      }
+
+      
+        
+         
+      
+
+      @media (max-width:850px){
+            .cont-3-box{
+              width: 45%;
+              margin-top: 10px;
+            }
+
+           .container-3{
+            height: 85vh;
+           }
+
+          
+      }
+
+      .card{
+        /* border: 2px solid black; */
+        width: 30%;
+        height: 20%;
+        padding-top: 10px;
+        padding-left: 6px;
+        background-color: #fb5849;
+        color: white;
+      }
+
+      .card1{
+        background-image: url(classy\ img\ 7.jpg);
+        background-size: cover;
+      }
+      .card2{
+        background-image: url(classy\ cafe\ 8.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .card3{
+        background-image: url(classy\ cafe9.jpg);
+        background-size: cover;
+      }
+      .card4{
+        background-image: url(classsy\ cafe\ 10.jpg);
+        background-size: cover;
+      }
+      .card5{
+        background-image: url(classy\ img\ 7.jpg);
+        background-size: cover;
+      }
+
+      .cont3-trans-box{
+        /* border: 2px solid black;  */
+         height: 80%;
+        background-color: #fb5849;
+        position: relative;
+        top: 200px;
+        cursor: pointer;
+        transition: all 1s ease-in-out; 
+         display: flex;
+        flex-direction: column; 
+      }
+
+      .cont3-trans-box h4{
+        margin-left: 5vh;
+        margin-top: 25px;
+      }
+
+      .cont3-trans-box h2{
+        margin-left: 5vh;
+        margin-top: 25px;
+      } 
+
+     
+
+      .cont-3-box:hover .cont3-trans-box{
+        transform: translateY(-150px);
+      } 
+
+      .container-4{
+        /* border: 2px solid black; */
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container-4 h3{
+        margin-bottom: 15px;
+        color: #fb5849;
+      }
+
+      .container-5{
+        /* border: 2px solid black; */
+        height: 45vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+       
+      }
+
+      .chef-card{
+        /* border: 2px solid black; */
+        height: 45vh;
+        width: 25%;
+        cursor: pointer;
+       
+      }
+
+      @media (max-width:640px){
+        .container-5{
+          height: fit-content;
+        }
+
+        .chef-card{
+          width: 60%;
+          margin-top: 15px;
+        }
+      }
+
+      .chef-card div:nth-child(1){
+        /* border: 2px solid green; */
+        height: 35vh;
+      }
+
+      .chef-card div img{
+        width: 100%;
+        height: 100%;
+        margin-top: -9px;
+      
+      }
+
+      
+
+      .chef-card div:nth-child(2){
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .chef-card div h3{
+        margin-top: 5px;
+      }
+
+      .chef-card div img:hover{
+          cursor: pointer;
+          z-index: -1;
+        opacity: 0.4;
+       
+        
+      }
+
+      .container-6{
+        /* border: 2px solid black; */
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       background-image: url(classy\ cafer\ 11eservation-bg.jpg);
+       z-index: -1;
+       opacity: 1;
+       flex-wrap: wrap;
+      }
+
+      .cont-6-box{
+        /* border: 2px solid black; */
+        height: 90%;
+        width: 40%;
+       
+      }
+
+      @media (max-width:1135px){
+        .cont-6-box{
+          width: 90%;
+          box-sizing: border-box;
+          height: 50%;
+          justify-content: space-between;
+        }
+
+        .cont-6-box:nth-child(2){
+          margin-top: 5%
+        }
+
+        
+
+        .container-6{
+          box-sizing: border-box;
+         
+          height: 180vh;
+          margin-top: 8%;
+        }
+       
+      }
+
+
+      .cont-6-box h3{
+        display: inline-block;
+        /* margin-left: 5px; */
+        color: #fb5849;
+        margin-top: 8%;
+      }
+
+      .cont-6-box h2{
+        /* border: 2px solid black; */
+        color: white;
+        height: 15vh;
+        width: 85%;
+        margin-top: 5%;
+        font-size: 40px;
+    line-height: 1.3;
+      }
+
+      @media (max-width: 540px){
+        .cont-6-box h2{
+        font-size: 25px;
+        }
+
+        .form-box input{
+          width: 70%;
+        }
+        }
+
+      .cont-6-box h4{
+        color: white;
+      line-height: 1.5;
+      font-weight: 300;
+      font-size: 17px;
+      margin-top:12%;
+      }
+
+      .logo{
+        /* border: 2px solid black; */
+        height: 9vh;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 15px;
+        position: relative;
+        top: 11%;
+        
+      }
+
+      .logo div{
+          /* border: 2px solid black; */
+          width: 8vh;
+          border-radius: 100%;
+         background-color: #fb5849;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+        
+      }
+
+       .fa-phone{
+        position: relative;
+        right: 5%;
+       }
+
+       .fa-envelope{
+          position: relative;
+          left: 6%;
+       }
+
+      .white-box{
+        /* border: 2px solid black; */
+        width: 100%;
+        height: 25%;
+        margin-top: 5vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .white-boxes{
+        /* border: 2px solid greenyellow; */
+        width: 39%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color:white;
+      }
+
+      .white-boxes p:nth-child(1){
+        font-weight: bold;
+        font-size: 20px;
+        margin-left: 3vh;
+      }
+
+      .white-boxes p:nth-child(2){
+        margin-top: 8px;
+      }
+
+      .cont-6-box-1{
+        /* border: 2px solid gold; */
+        width: 100%;
+        height: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+      }
+
+      .form-box{
+           /* border: 2px solid green; */
+           width: 100%;
+           height: 30%;
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: space-around;
+      }
+
+      .form-box input{
+        height: 7vh;
+        width: 40%;
+        border-radius: 5px;
+        border: 1px solid black;
+
+      }
+
+     
+
+
+      .message-box{
+        /* border: 2px solid black; */
+        width: 100%; 
+        height: 30%;
+        display: flex;
+        justify-content: center;
+      }
+
+      .message-box input{
+        width: 90%;
+        height: 100%;
+        border-radius: 2px;
+        border: 1px solid black;
+      }
+
+      .submit-box{
+        /* border: 2px solid yellow; */
+        height: 7%;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 3%;
+        border-radius: 2px;
+        background-color: #fb5849;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .submit-box a{
+        text-decoration: none;
+        color: white;
+       
+      }
+
+      .cont-6-box:nth-child(2){
+        background-color:white;
+      }
+
+      @media (max-width: 540px){
+        .message-box input{
+          margin-top: 21%;
+          height:70% ;
+        }
+
+        .submit-box{
+          margin-top: 10%;
+        }
+
+        .form-box input{
+          width: 90%;
+          margin-top: 2%;
+          height: 5vh;
+        }
+        }
+
+        .container7{
+          /* border: 2px solid blue; */
+          width: 100%;
+          height: 55vh;
+        }
+
+        .container7-1-box{
+          /* border: 2px solid black; */
+          width: 100%;
+          height: 6vh;
+          margin-top: 15vh;
+          color: #fb5849;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .container7-2-box{
+          /* border: 2px solid black; */
+          width: 100%;
+          height: 10vh;
+         
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .container7-3-box{
+          /* border: 2px solid black; */
+          width: 100%;
+          height: 6vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .container7-4-box{
+          /* border: 2px solid green; */
+          width: 100%;
+          height: 15vh;
+          margin-top: 7vh;
+          display: flex;
+          justify-content: center;
+        }
+
+        .int-box-cont{
+          
+          width: 30%;
+          height: 100%; 
+          display: flex;
+          justify-content: space-around;
+        }
+
+        .int-small-box{
+          
+          width: 25%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+         align-items: center;
+        
+
+        }
+
+        .int-small-box h3{
+          padding: 12px;
+        }
+
+        .int-small-box img{
+          
+          width: 100%;
+          height: 60%;
+         margin-top: -8px;
+         
+        }
+
+        @media (max-width:820px){
+          .int-small-box h3{
+             font-size: 10px;
+          }
+        }
+        @media (max-width:420px){
+          .int-small-box h3{
+             font-size: 6px;
+          }
+        }
+
+        
+        .container8{
+          /* border: 2px solid black; */
+          height: 60vh;
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+
+        .cont8-box{
+          /* border: 2px solid yellowgreen; */
+          width: 40%;
+          height: 60vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          
+        }
+
+        .cont8-internal-box{
+          /* border: 2px solid black; */
+          width: 100%;
+          height: 30%;
+          display: grid;
+          grid-template-columns: 0.8fr 2.2fr 0.8fr;
+
+        }
+
+        .cont8-internal-Sbox{
+          /* border: 2px solid green; */
+
+        }
+
+        .cont8-internal-Sbox h2{
+        padding-top: 9px;
+        }
+
+        .cont8-internal-Sbox h4{
+          padding-top: 15px;
+          font-weight: 300;
+        }
+
+        .cont8-internal-Sbox h3{
+                 /* border: 2px solid black; */
+                 width: 60%;
+                 height: 60%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 18px 0px 0px 18px;
+                font-size: 20px;
+                background-color: #fb5849;
+                
+
+        }
+
+        @media (max-width:850px) {
+          .container8{
+          height: 147vh;
+        }
+
+        .cont8-box{
+            width: 80%;
+            height: 60vh;
+            margin-top: 50px;
+        }
+
+        .cont8-internal-box{
+          height: 15%;
+        }
+
+        }
+
+        @media (max-width:566px){
+          .cont8-internal-Sbox h2{
+              font-size: 19px;
+        }
+
+        .cont8-internal-Sbox h4{
+            font-size: 12px;
+        }
+        }
+
+
+        .container9{
+          /* border: 2px solid black; */
+          height: 18vh;
+          margin-top: 50px;
+          display: flex;
+          justify-content: center;
+          background-color: #fb5849;
+          flex-wrap: wrap;
+        }
+
+        .cont-9-boxes{
+           /* border: 2px solid green; */
+           height: 100%;
+           width: 60vh; 
+           display: flex;  
+           /* justify-content: space-around; */
+           align-items: center; 
+           
+        }
+
+        .cont9-sbox1{
+          /* border: 2px solid black; */
+          width: 40px;
+          height: 40px;
+          border-radius: 100%;
+          color:#fb5849;
+          background-color:white ;
+          margin-left: 5%; 
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+       
+
+        .sbox1{
+          margin-left: 28%;
+        }
+
+        .sbox2{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          
+        }
+
+        .sbox3{
+          justify-content: center;
+        }
+
+        @media (max-width:1170px) {
+          .container9{
+            height: 40vh;
+          }
+
+          .cont-9-boxes{
+            height: 33.33%;
+          }
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="main-nav">
+          <a href="###">
+            <img src="klassy-logo.png" alt="empty" />
+          </a>
+          <div class="menu-bar">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </div>
+          <ul class="menu-w">
+            <li>Home</li>
+            <li>About</li>
+            <li>Menu</li>
+            <li>Chefs</li>
+            <li class="option">
+              Features
+              <div class="menu-feature">
+                <di33v>feature1</di33v>
+                <div>feature2</div>
+                <div>feature3</div>
+                <div>feature4</div>
+              </div>
+            </li>
+            <li>Contact us</li>
+          </ul>
+
+          <div class="nav-bar"></div>
+        </div>
+      </nav>
+
+      <div class="container1">
+        <div class="cont1-box1">
+          <div class="inBox1">
+            <h1>Klassy cafe</h1>
+            <h3>The Best Experience</h3>
+            <a href="">Make A Reservation</a>
+          </div>
+        </div>
+        <div class="cont1-box2">
+          <img src="classy img2.jpg" alt="" />
+        </div>
+      </div>
+
+      <!-- ------------section2--------------- -->
+
+      <div class="container2">
+        <div class="cont2-box iner-box1">
+          <div class="line"></div>
+          <h3>About us</h3>
+          <h2>We Leave A Delicious</h2>
+          <h2>Memory For You</h2>
+          <h4>
+            Klassy Cafe is one of the best restaurant HTML templates with
+            Bootstrap CSS framework. You can download and feel free to use this
+            website template layout for your restaurant business. You are
+            allowed to use this template for commercial purposes.
+          </h4>
+
+          <h4>
+            Fusce sed imperdiet leo. Donec feugiat arcu eu risus eleifend, id
+            gravida nulla gravida leo elit. Ante ipsum ultrices urna volutpat
+            ipsum.
+          </h4>
+
+          <div class="small-cont">
+            <div>
+              <img src="classy cafe 3.jpg" alt="" />
+            </div>
+            <div>
+              <img src="classy cafe 4.jpg" alt="" />
+            </div>
+            <div>
+              <img src="classy cafe 5.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="cont2-box iner-box2">
+          <img src="clasy cafe 6.jpg" alt="" />
+        </div>
+      </div>
+
+      <!-- ---------section3-------- -->
+      <div class="iner3-box">
+        <div class="box1">
+          <div class="line-2"></div>
+          <span>Our Menu</span>
+        </div>
+        <div class="box2">
+          <h2>Our selection of cakes</h2>
+          <h2>with quality taste</h2>
+        </div>
+      </div>
+
+      <!-- -------------section4------------ -->
+      <div class="container-3">
+            <div class="cont-3-box card1">
+              <h2 class="card">$8</h2>
+              <div class="cont3-trans-box">
+                 <h2>Klassy Pancake</h2>
+                 <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima excepturi at alias. Esse, assumenda maiores.</h4>
+              </div>
+            </div>
+            <div class="cont-3-box card2">
+              <h2 class="card">$10</h2>
+              
+              <div class="cont3-trans-box">
+                 <h2>Klassy Pancake</h2>
+                 <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima excepturi at alias. Esse, assumenda maiores.</h4>
+              </div>
+            </div>
+            <div class="cont-3-box card3">
+              <h2 class="card">$7</h2>
+              <div class="cont3-trans-box">
+                <h2>Klassy Pancake</h2>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima excepturi at alias. Esse, assumenda maiores.</h4>
+             </div>
+            </div>
+            <div class="cont-3-box card4">
+              <h2 class="card">$5</h2>
+              <div class="cont3-trans-box">
+                <h2>Klassy Pancake</h2>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima excepturi at alias. Esse, assumenda maiores.</h4>
+             </div>
+            </div>
+           
+      </div>
+
+   <!-- ---------------------section5--------------    -->
+
+       <div class="container-4">
+            <h3>Our Chefs</h3>
+            <h2>We offer the best</h2>
+            <h2>ingredients for you</h2>
+       </div>
+
+   <!-- ------------------------section6---------------- -->
+       
+   <div class="container-5">
+    <div class="chef-card">
+       <div >
+        <img src="chefs-01.jpg" alt="">
+       </div>
+       <div>
+          <h3>Randy walker</h3>
+          <h4>Pastry chefs</h4>
+       </div>
+    </div>
+         <div class="chef-card">
+          <div >
+            <img src="chefs-02.jpg" alt="">
+           </div>
+           <div>
+              <h3>Randy walker</h3>
+              <h4>Cookie Chef</h4>
+           </div>
+         </div>
+         <div class="chef-card">
+          <div >
+            <img src="chefs-03.jpg" alt="">
+           </div>
+           <div>
+              <h3>Randy walker</h3>
+              <h4>Dinner chef</h4>
+           </div>
+         </div>
+   </div>
+
+   <!-- ------------------------section7----------- -->
+       <div class="container-6">
+            <div class="cont-6-box">
+              <div class="line-2"></div>
+              <h3>Contact Us</h3>
+              <h2>Here You Can Make A Reservation Or Just walkin to our cafe</h2>
+              <h4>Donec pretium est orci, non vulputate arcu hendrerit a. Fusce a eleifend riqsie, namei sollicitudin urna diam, sed commodo purus porta ut.</h4>
+
+              <div class="logo">
+                <div class="fa fa-phone"> </div>
+                <div class="fa fa-envelope"></div>    
+              </div>
+
+              <div class="white-box">
+                     <div class="white-boxes">
+                         <p>Phone number</p>
+                         <p>0856-521-89</p>
+                         <p>0856-521-89</p>
+                     </div>
+                     <div class="white-boxes">
+                      <p>Phone number</p>
+                         <p>0856-521-89</p>
+                         <p>0856-521-89</p>
+                     </div>
+              </div>
+            </div>
+
+            <div class="cont-6-box ">
+              <div class="cont-6-box-1">
+                <h1>Table Reservation</h1>
+              </div>
+
+              <div class="form-box">
+                 <input type="text" placeholder="   Your Name*">
+                 <input type="text " placeholder="   Your Email Adress">
+                 <input type="text" placeholder="   Phone Number*">
+                 <input type="text" placeholder="   Number of Guests">
+                 <input type="text" placeholder="   dd/mm/yy">
+                 <input type="text" placeholder="   Time">
+              </div>
+
+              <div class="message-box">
+                <input type="text" name="message-box" placeholder="   Message">
+              </div>
+
+             <div class="submit-box">
+                  <a href="###">Make A Reservation</a>
+             </div>
+            </div>
+       </div>  
+
+       <!-- --------------section8------------------------------- -->
+
+       <div class="container7">
+                  <div class="container7-1-box">
+                    <h3>KLASSY WEEK</h3>
+                  </div>
+
+                  <div class="container7-2-box">
+                    <h1>This Week's Special</h1>
+                  </div>
+                  <div class="container7-3-box">
+                    <h1>Meal Offers</h1>
+                  </div>
+
+                  <div class="container7-4-box">
+                           <div class="int-box-cont">
+                                <div class="int-small-box">
+                                  <img src="klassy cafe.img new.png" alt="">
+                                  <h3>BreakFast</h3>
+                                </div>
+                                <div class="int-small-box">
+                                  <img src="klaccy cafe new 2.png" alt="">
+                                  <h3>Lunch</h3>
+                                </div>
+                                <div class="int-small-box">
+                                  <img src="klassy cafe new 3.png" alt="">
+                                  <h3>Dinner</h3>
+                                </div>
+                           </div>
+                  </div>
+       </div>
+
+       <!-- ----------------------section9------------- -->
+
+       <div class="container8">
+               <div class="cont8-box">
+                <div class="cont8-internal-box">
+                  <div class="cont8-internal-Sbox">
+                    <img src="klassy cafe new 4.png" alt="">
+                   
+                  </div>
+                  <div class="cont8-internal-Sbox">
+                    <h2>Eggs Omelette</h2>
+                    <h4>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</h4>
+                  </div>
+                  <div class="cont8-internal-Sbox">
+                    <h3><span>14$</span></h3>
+                  </div>
+                </div>
+                <div class="cont8-internal-box">
+                  <div class="cont8-internal-Sbox">
+                    <img src="klasy cafe new 5.png" alt="">
+                   
+                  </div>
+                  <div class="cont8-internal-Sbox">
+                    <h2>Dolma Rice</h2>
+                    <h4>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</h4>
+                  </div>
+                  <div class="cont8-internal-Sbox">
+                    <h3><span>14$</span></h3>
+                  </div>
+                </div>
+                <div class="cont8-internal-box">
+                  <div class="cont8-internal-Sbox">
+                    <img src="klassy cafe new 5.png" alt="">
+                   
+                  </div>
+                  <div class="cont8-internal-Sbox">
+                    <h2>Eggs & Cheese Omelette</h2>
+                    <h4>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</h4>
+                  </div>
+                  <div class="cont8-internal-Sbox">
+                    <h3><span>14$</span></h3>
+                  </div>
+                </div>
+               </div>
+
+               <div class="cont8-box">
+                   <div class="cont8-internal-box">
+                  <div class="cont8-internal-Sbox">
+                    <img src="klassy cafe new 6.png" alt="">
+                   
+                  </div>
+                  <div class="cont8-internal-Sbox">
+                    <h2>Salads & More</h2>
+                    <h4>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</h4>
+                  </div>
+                  <div class="cont8-internal-Sbox">
+                    <h3><span>14$</span></h3>
+                  </div>
+                </div>
+                <div class="cont8-internal-box">
+                  <div class="cont8-internal-Sbox">
+                    <img src="klassy cafe new 7.png" alt="">
+                   
+                  </div>
+                  <div class="cont8-internal-Sbox">
+                    <h2>Juces</h2>
+                    <h4>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</h4>
+                  </div>
+                  <div class="cont8-internal-Sbox">
+                    <h3><span>14$</span></h3>
+                  </div>
+                </div>
+                <div class="cont8-internal-box">
+                  <div class="cont8-internal-Sbox">
+                    <img src="klassy cafe new 8.png" alt="">
+                   
+                  </div>
+                  <div class="cont8-internal-Sbox">
+                    <h2>Fruit salads</h2>
+                    <h4>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</h4>
+                  </div>
+                  <div class="cont8-internal-Sbox">
+                    <h3><span>14$</span></h3>
+                  </div>
+                </div>
+               </div>
+       </div>
+
+       <!-- ---------------------------section10--------------- -->
+
+       <div class="container9">
+              <div class="cont-9-boxes">
+                <div class="cont9-sbox1 sbox1">
+                  <i class="fa fa-facebook"></i>
+                </div>
+                <div class="cont9-sbox1">
+                  <i class="fa fa-twitter"></i>
+                </div>
+                <div class="cont9-sbox1">
+                  <i class="fa fa-google"></i>
+                </div>
+                <div class="cont9-sbox1">
+                  <i class="fa fa-instagram"></i>
+                </div>
+              </div>
+              <div class="cont-9-boxes sbox2">
+                <a href="###">
+                  <img src="klassy logo white 2.png" alt="empty" />
+                </a>
+              </div>
+              <div class="cont-9-boxes sbox3">
+                <h5>@ copyright Klassy Cafe Co.</h5>
+              </div>
+       </div>
+       
+    </div>
+  </body>
+</html>
