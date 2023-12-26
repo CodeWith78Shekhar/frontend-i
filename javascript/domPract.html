@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+   .container1{
+       border: 2px solid black;
+       width: 70%;
+       height: 60vh;
+       margin: auto;
+
+   }
+
+   .container1 input{
+     margin-top: 5vh;
+     margin-left:5vh ;
+   }
+
+   .container2{
+     /* border: 2px solid black; */
+    width: 70%;
+    height: 40vh;
+    margin-left:5vh ;
+    margin-top: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   }
+
+   .box{
+    border: 2px solid black;
+    width: 22%;
+    height: 48%;
+   }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container1">
+          <input type="text" id="inp1" placeholder="enter your colour name">
+          <input type="number" id="inp2" placeholder="select your div">
+          <button id="btn1">submit</button>
+          <button id="btn2">reload</button>
+
+          <div class="container2">
+              <div class="box" id="1"></div>
+              <div class="box" id="2"></div>
+              <div class="box" id="3"></div>
+             
+              
+              <div class="box"  id="4"></div>
+              <div class="box" id="5"></div>
+              <div class="box" id="6"></div>
+              <div class="box" id="7"></div>
+              <div class="box" id="8"></div>
+          </div>
+    </div>
+
+    <script>
+          document.querySelector("#btn1").onclick = function(){
+             let a = document.querySelector("#inp1").value ;
+             let b = document.querySelector("#inp2").value;
+
+             if(b>8){
+                alert("dial valid num")
+             }
+             
+
+             document.getElementById(b).style.backgroundColor = a;
+
+          }
+
+          document.querySelector("#btn2").onclick = function(){
+          let c=  document.querySelectorAll("input") 
+            let b = document.querySelector("#inp2").value;
+            document.getElementById(b).style.backgroundColor = "white";
+
+            for(let i of c){
+
+             i.focus;
+             i.value = "";
+             
+           } 
+
+          
+           
+          }
+
+
+    </script>
+   
+
+</body>
+</html>

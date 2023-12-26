@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <input type="text" id="inp" >
+     <button id="btn">BUTTON</button>
+    
+
+    <script>
+
+
+   document.getElementById("btn").onclick = function(){
+    // let a =   ;
+     let a = document.getElementById("inp").value;
+     console.log(a)
+    // for(let i=a;i>=0;i--){
+    //     console.log(i);
+    // }
+   
+    if(a >= 'A'  && a<='Z' || (a>='a' && a<='z'))  {
+           console.log("its a charchter")
+           
+    }
+    else if( a >= 0 || a<=0  ){
+        
+        console.log("its a number")
+    }
+    else{
+        console.log("its a special char ")
+    }
+
+   }
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom project</title>
+    <style>
+     
+     #container{
+        border: 2px solid black;
+        background-color: antiquewhite;
+        width: 40%;
+        /* height: 40vh; */
+        margin: auto;
+        margin-top: 20vh;
+     }
+
+     #container h2{
+        margin-left: 4vh;
+     }
+
+     #container select{
+        width: 50%;
+        height: 5vh;
+        margin-left: 4vh;
+     }
+
+     .color-cont{
+        /* border: 2px solid black; */
+        width: 40%;
+        height: 5vh;
+        margin-left: 4vh;
+        margin-top: 2vh;
+        display: flex;
+        justify-content: space-between;
+     }
+
+     .color{
+        /* border: 2px solid black; */
+        width: 10%;
+        height: 5vh;
+        border-radius: 100%;
+       
+     }
+
+     #red{
+        background-color: red;
+     }
+     #yellow{
+        background-color:yellow;
+     }
+     #green{
+        background-color:green;
+     }
+     #blue{
+        background-color: blue;
+     }
+     #black{
+        background-color: black;
+     }
+
+     #html{
+        /* height: 5vh; */
+        /* border: 2px solid black; */
+        /* width: 100%; */
+        margin-top: 3vh;
+        margin-bottom: 5vh;
+        margin-left: 4vh;
+        margin-right: 5vh;
+     }
+
+     button{
+      margin-bottom: 3vh;
+      margin-left: 4vh;
+     }
+    </style>
+</head>
+<body>
+
+
+    <div id="container">
+        <h2>Select your Domain:</h2>
+        <select name="lang" id ="selct">
+            <option value="none" id="js">
+                none
+            </option>
+            <option value="python" id="phy">
+                python
+            </option>
+
+            <option value="Django" id="Dja">
+                Django
+            </option>
+
+            <option value="javaScript" id="js">
+                javaScript
+            </option>
+
+   
+            
+        </select>
+        
+        <div class="color-cont">
+            <div class="color" id="red"></div>
+            <div class="color" id="yellow"></div>
+            <div class="color" id="green"></div>
+            <div class="color" id="blue"></div>
+            <div class="color" id="black"></div>
+        </div>
+
+        <div id="html">
+
+        </div>
+
+        <button id="upper" >Upper</button>
+        <button id="lower">lower</button>
+        <button id="big">+</button>
+        <button id="small">-</button>
+
+    </div>
+   
+    
+
+    <script>
+
+      document.getElementById("selct").onclick = function(){
+          let a =  document.getElementById("selct").value
+          if(a == "python"){
+            document.getElementById("html").innerHTML = " Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms."
+          }
+          if(a == "Django"){
+            document.getElementById("html").innerHTML = "Django is a high-level Python web framework that enables rapid development of secure and maintainable websites. Built by experienced developers, Django takes care of much of the hassle of web development, so you can focus on writing your app without needing to reinvent the wheel."
+          }
+          if(a == "javaScript"){
+            document.getElementById("html").innerHTML = "With that being said, currently JavaScript is the most demanded programming language in the entire market. Also, the arrival of TypeScript (a JavaScript superset with type safety) may also help to achieve this milestone. TypeScript popularity has only increased in recent years."
+          }
+
+          else if(a== "none"){
+            document.getElementById("html").innerHTML = ""
+          }
+          
+      }
+       
+
+      document.getElementById("red").onclick = function(){
+           document.body.style.backgroundColor = "red";
+      }
+      document.getElementById("yellow").onclick = function(){
+           document.body.style.backgroundColor = "yellow";
+      }
+      document.getElementById("green").onclick = function(){
+           document.body.style.backgroundColor = "green";
+      }
+      document.getElementById("blue").onclick = function(){
+           document.body.style.backgroundColor = "blue";
+      }
+      document.getElementById("black").onclick = function(){
+           document.body.style.backgroundColor = "black";
+      }
+
+       let a = 16;
+      document.getElementById("big").onclick = function(){
+         let b = a++;
+         
+          document.getElementById("html").style.fontSize = b +"px"
+      }
+
+      document.getElementById("small").onclick = function(){
+         let b = a--;
+          document.getElementById("html").style.fontSize = b +"px"
+      }
+
+      document.getElementById("upper").onclick = function(){
+          document.getElementById("html").style.textTransform = "uppercase"
+      }
+
+      document.getElementById("lower").onclick = function(){
+          document.getElementById("html").style.textTransform = "lowercase`"
+      }
+
+    </script>
+</body>
+</html>

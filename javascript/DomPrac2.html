@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="inp1">
+    <input type="number" id="inp2">
+    <select name="" id="selct">
+        <option value="None" id="none">None</option>
+        <option value="Add" id="Add">Add</option>
+        <option value="sub" id="sub">sub</option>
+        <option value="mul" id="mul">mul</option>
+        <option value="divide" id="divide">divide</option>
+    </select> <br><br>
+
+    <a href="" id="Django">Django</a>
+    <a href="" id="phy">phython</a>
+    <a href="" id="java">java</a>
+    <a href="" id="js">javascript</a>
+
+    <script>
+                document.getElementById("selct").onclick = function(){
+                    let a = document.getElementById("selct").value;
+                    let b = Number(document.getElementById("inp1").value);
+                    let c = Number(document.getElementById("inp2").value);
+
+                    if(a == "Add"){
+                        let d = b+c;
+                        console.log(d)
+                    }
+                    if(a == "sub"){
+                        let d = b-c;
+                        console.log(d)
+                    }
+                    if(a == "divide"){
+                        let d = b/c;
+                        console.log(d)
+                    }
+                    if(a == "mul"){
+                        let d = b*c;
+                        console.log(d)
+                    }
+                    if(a=="None"){
+                        console.log("")
+                    }
+                }
+    
+             
+        let a =  document.querySelectorAll("a");
+          
+        for(let i of a){
+                 i.onclick = function(event){
+                    console.log(i.innerText);
+                    event.preventDefault()
+                 }
+        }
+
+
+    </script>
+</body>
+</html>

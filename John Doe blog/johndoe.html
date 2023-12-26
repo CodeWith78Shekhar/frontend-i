@@ -20,11 +20,16 @@
             width: 100%;
             height: 90vh;
             background-image: url(john-doe-pic1.jpg);
-            /* z-index: -1;
-            opacity: 0.5; */
+            background-attachment: fixed;
+            z-index: -1;
+            opacity: 0.5;
            background-repeat: no-repeat;
            background-size: cover;
            
+         }
+
+         .container1-background{
+            background-color: black;
          }
 
          .icon-bar{
@@ -166,41 +171,1131 @@
 
         /* -------------------section3-------------------- */
         
+        .container3{
+            /* border: 2px solid black; */
+            height: 65vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .cont3-box{
+           
+            border: 1px solid rgb(191, 185, 185);
+            /* margin-top: 8vh; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .line-1 {
+    display: block;
+    width: 25px;
+    height: 1.5px;
+    background-color: #f85c70;
+    margin: 0px 12vh;
+    margin-bottom: 6vh;
+   }
+
+   .btn-1{
+    /* border:2px solid #f85c70; */
+    color: #f85c70;
+    background-color: #fff;
+    height: 4.5vh;
+    width: 20vh;
+    border-radius: 6px;
+    margin: 0px 12vh;
+    margin-top: 2vh;
+   }
+
+   .sec3-box1 h3{
+    font-size: 31px;
+    margin: 0px 12vh;
+    margin-bottom: 1vh;
+    
+   }
+
+  .sec3-box1 h5{
+    font-size: 20px;
+    margin: 0px 12vh;
+    margin-bottom: 3vh;
+  }
+
+  .sec3-box1 p{
+    margin: 0px 12vh;
+  }
+
+  .sec3-box2 h3{
+    font-size: 31px;
+    margin: 0px 12vh;
+    margin-bottom: 1vh;
+    margin-top: 5vh;
+  }
+
+  .line-2 {
+    display: block;
+    width: 25px;
+    height: 1.5px;
+    background-color: #f85c70;
+     margin: 0px 12vh;
+    margin-bottom: 6vh; 
+   }
+
+   .div-box1{
+    /* border: 2px solid black ; */
+    height: 23vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+   }
+
+   .sec3-box2 div p{
+    margin-left:  12vh
+   
+   }
+
+   .sec3-box2 a{
+            /* margin-left: 15px; */
+            width: 15%;
+            color: #9e3643;
+            text-decoration: none;
+   }
+
+   .logo2{
+    margin: 0px 12vh;
+    /* border: 2px solid black; */
+    width: 25vh;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-between;
+   }
+
+   .sec3-box3 h3{
+    font-size: 31px;
+    margin: 0px 12vh;
+     margin-bottom: 1vh;
+    margin-top: 10vh; 
+   } 
+
+   .line-3{
+    display: block;
+    width: 25px;
+    height: 1.5px;
+    background-color: #f85c70;
+     margin: 0px 12vh;
+    /* margin-bottom: 6vh;  */
+   }
+
+   .sec3-internal-boxes{
+    /* border: 2px solid black; */
+    height: 38vh;
+    margin-top: 6vh;
+   }
+
+   .sec3-internal-box0{
+    /* border: 2px solid green; */
+    height: 33.33%;
+    display: flex;
+   }
+
+   .sec3-internal-box11{
+       /* border: 2px solid black; */
+       width: 20%;
+       height: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .sec3-internal-box11 i{
+        font-size: 35px;
+        color: #9e3643;
+   }
+
+   .sec3-internal-box12{
+    border-bottom: 0.3px solid rgb(177, 174, 174);
+    width: 80%;
+    height: 100%;
+   }
+
+   .sec3-internal-box12 h4{
+    margin-top: 22px;
+   }
+
+   .sec3-internal-box12 p{
+    margin-top: 5px;
+   }
+
+   @media (max-width:1000px){
+
+    .container3{ 
+          display:block;
+          height: auto;
+        }
+
+    .cont3-box{
+            margin-top: 8vh;
+            border: none;
+        }    
+   }
+
+   /* --------------------section4----------------- */
+
+   .container4{
+        /* border: 2px solid black; */
+        width: 100%;
+        /* height: 90vh; */
+        margin-top: 20vh;
+   }
+
+   .container4 span{
+    /* border: 2px solid green; */
+    margin-left: 6vh;
+    font-size: 35px;
+   }
+
+   .container4 span span{
+    color: #9e3643;
+   }
+
+   .container4-main{
+       /* border: 2px solid yellow; */
+      /* height:80vh; */
+      margin-top: 4vh;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+   }
+
+   .cont4-inner-box{
+        border: 2px solid rgb(198, 206, 198);
+        /* height: 100%; */
+        width: 23%;
+        margin-top: 2vh;
+   }
+
+    .cont4-inner-box3{
+       
+       /* height: 110%; */
+      
+   } 
+
+   @media (max-width:1030px){
+    .cont4-inner-box{
+        width: 45%;
+        /* height: fit-content; */
+    }
+
+    .cont4-inner-box3{
+        width: 95%;
+        margin-top: 20px;
+        /* height: fit-content; */
+    }
+
+    .container4{
+        /* height: 156vh; */
+    }
+   }
+
+   @media (max-width:575px){
+    .cont4-inner-box{
+        width: 90%;
+        /* height: fit-content; */
+    }
+
+    .cont4-inner-box3{
+        width: 90%;
+        margin-top: 20px;
+        /* height: fit-content; */
+       
+    }
+
+    .container4{
+        /* height: 212vh; */
+        flex-direction: row;
+    }
+
+    .container4-main{
+        /* height: fit-content; */
+    }
+   }
+
+   
+
+
+   .cont4-inner-box h2{
+    margin-left: 2vh;
+    margin-top: 15px;
+   }
+
+   .line-4{
+    display: block;
+    width: 25px;
+    height: 1.5px;
+    background-color: #db2c43;
+    margin-left: 2vh;
+    margin-top: 1vh;
+   
+   }
+
+   .cont4-inner-box1{
+    /* border: 2px solid orange; */
+    width: 90%;
+    /* height: 85%; */
+    margin-left: 2vh;
+    margin-top: 6vh;
+   }
+
+   .cont4-inner-box1 h2{
+    color: #db2c43;
+    margin-left: 0;
+   }
+
+   .cont4-inner-box1 p{
+       margin-top: 1.5vh;
+       color: rgb(91, 87, 87);
+       font-size: 14px;
+   }
+
+   .cont4-inner-box1 hr{
+    width: 100%;
+    margin-top:2vh;
+   }
+
+   .cont4-box1{
+    /* border: 2px solid orange; */
+    width: 90%;
+    /* height: 65%; */
+    margin-left: 2vh;
+    
+   }
+
+   .cont4-box1 h4{
+    font-size: 18px;
+    color: rgb(91, 87, 87);
+    margin-top: 1.5vh;
+    margin-left: 2vh;
+   }
+
+   .blood-row{
+    height: 4px;
+    width: 90%;
+    margin-top: 1.5vh;
+    margin-left: 2vh;
+    border-radius: 5px;
+    background-color: rgb(194, 182, 182);
+
+   
+   }
+
+   .iner-blood{
+    height: 100%;
+    width: 80%;
+    background-color: #da6573;
+    border-radius: 5px;
+   }
+
+   .cont4-box2{
+    /* border: 2px solid yellow; */
+    width: 90%;
+    /* height: 35%; */
+    margin-left: 2vh;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+   }
+
+   .cont4-box2 h4{
+    font-size: 18px;
+    color: rgb(91, 87, 87);
+    margin-top: 1.5vh;
+    margin-left: 2vh;
+   }
+
+   /* <!-- -----------------------section5---------------------- --> */
+
+    .container5{
+        /* border: 2px solid black; */
+        background-color: #343a40!important;
+        width: 100%;
+        /* height: 28vh; */
+        margin-top: 15vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cont5-mid-box{
+        /* border: 2px solid green; */
+        width: 85%;
+        /* height: 18vh; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4vh;
+        margin-bottom: 4vh;
+    }
+
+    .cont5-inner-box{
+        /* border: 2px solid green; */
+        width: 25%;
+        height: 18vh;
+        display: flex;
+    }
+    
+    .cont5-divider-box{
+        /* border-right: 1px solid rgb(245, 237, 237); */
+        /* height: 100%; */
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .divider-box-1part{
+        border-right: 1px solid white;
+    }
+     
+    .cont5-divider-box i{
+        font-size: 65px;
+        color: white;
+    }
+
+    .cont5-divider-box h1{
+        color: #db2c43;
+    }
+
+     .cont5-divider-box p{
+        color: white;
+     }
+
+    .divider-box-2part{
+        flex-direction: column;
+    }
+
+    @media (max-width:1050px){
+        .cont5-inner-box{
+            width: 50%;
+
+        }
+    }
+    @media (max-width:550px){
+        .cont5-inner-box{
+            width: 100%;
+           
+        }
+    }
+
+    /* --------------------section6------------------------ */
+
+    .container6{
+        /* border: 2px solid black; */
+        /* height: 100vh; */
+        margin-top: 10vh;
+    }
+     
+    .cont6-main-box{
+        /* border: 2px solid green; */
+        /* height: 95vh; */
+        width: 90%;
+        margin: auto;
+        margin-top: 4vh;
+    }
+
+    .cont6-main-box h1{
+        font-size: 40px;
+        font-weight: 545;
+    }
+
+    .cont6-main-box span{
+        color: #db2c43;
+    }
+
+    .cont6-block-box{
+        /* border: 2px solid black; */
+        /* height: 82vh; */
+        margin-top: 6vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+
+    .cont6-internal-box{
+        border: 1px solid rgb(182, 184, 179);
+        width: 30%;
+        margin-top: 4vh;
+        
+        /* height: 46%; */
+    }
+    
+   .cont6-icon{
+      /* border: 2px solid black; */
+      height: 5vh;
+   }
+
+   .cont6-icon i{
+    font-size: 35px;
+    position: relative;
+    bottom: 18px;
+    left: 20px;
+    color: #db2c43;
+   }
+
+   .cont6-internal-box h5{
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0px 25px;
+   }
+
+   .cont6-internal-box p{
+        
+         color: #343a40;
+         margin: 0px 25px;
+         margin-top: 3vh;
+         margin-bottom: 8vh;
+   }
+
+   @media (max-width:825px){
+    .cont6-internal-box{
+        width: 45%;
+        margin-top: 4vh;
+    }
+   }
+   @media (max-width:670px){
+    .cont6-internal-box{
+        width: 90%;
+    }
+   }
+
+   /* ------------------------------section7--------------------------------- */
+     
+   .container7{
+    /* border: 2px solid black; */
+    width: 100%;
+    /* height: 80vh; */
+    margin-top: 15vh;
+   }
+
+   .container7 h1{
+    margin-left: 5%;
+    margin-top: 8vh;
+   }
+
+   .container7 h1 span{
+     color: #db2c43;
+   }
+
+   .container7-main-box{
+    /* border: 2px solid green; */
+    width: 90%;
+    /* height: 66vh; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+   }
+
+    .cont7-sbox{
+        border: 2px solid gray;
+        width: 20%;
+        /* height: 62vh; */
+        position: relative;
+        margin-top: 8vh;
+        overflow: hidden;
+       
+    }
+
+    .cont7-sbox h2{
+        color: #343a40;
+        
+        margin: 0px 25%;
+        margin-top: 6vh;
+        font-size: 35px;
+        
+        
+    }
+
+    .cont7-sbox  sup,sub{
+        font-size: 15px;
+    }
+
+    .cont7-small-box{
+        /* border: 2px solid black; */
+        color: #343a40;
+       
+        margin: 0px 26%;
+        margin-top: 6vh;
+        /* height: 20vh; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .cont7-sbox button{
+        background-color: #da6573;
+        color: white;
+        border-radius: 10px;
+        width: 55%;
+        height: 5vh;
+        margin-left:20%;
+        margin-top: 6vh;
+        margin-bottom: 5vh;
+
+    }
+
+    .price-card::before{
+               content: "new";
+               position: absolute;
+               font-size: 28px;
+               background-color: #f85c70;width: 100px;
+               color: #fff;
+               font-weight: 400;
+               padding: 6px 10px;
+               transform: rotate(45deg);
+               right: -25px;
+               top: 10px;
+               text-align: center;
+               
+    }
+
+    @media (max-width:1500px){
+        .cont7-sbox{
+            width: 40%;
+        }
+    }
+
+    @media (max-width:760px){
+        .cont7-sbox{
+            width: 85%;
+           
+        }
+
+        .container7-main-box{
+           justify-content: center;
+           
+        }
+
+        
+    }
+
+    /* ------------------------section8---------------------------- */
+
+    .container8{
+                   /* border: 2px solid black; */
+                   height: 20vh;
+                   margin-top: 8vh;
+                   display: flex;
+                   flex-direction: column;
+                   justify-content: space-around;
+                   align-items: center;
+                   background-color: #343a40!important;
+    }
+
+    .container8 h1{
+        color: white;
+    }
+
+    .container8 button{
+        width: 15vh;
+        height: 4vh;
+        background-color: #9e3643;
+        pointer-events: visible;
+        cursor: pointer;
+    }
+     
+  /* ------------------------section9--------------- */
+
+   .small-section{
+      /* border: 2px solid black; */
+      height: 10vh;
+      margin-top: 10vh;
+      margin-left: 5%;
+   }
+
+   .small-section span{
+    color: #da6573;
+   }
+
+  .container9{
+     /* border: 2px solid black; */
+     width: 90%;
+     /* height: 120vh; */
+     margin-left:5%;
+  }
+
+  .filter-section{
+    border-bottom: 1px solid rgb(164, 158, 158);
+    /* box-shadow:greenyellow; */
+    /* height: 5vh; */
+    width: 30%;
+    margin: auto;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .filter-section a{
+      text-decoration: none;
+      color: #7b8186;
+      /* height: 4vh; */
+  }
+
+  .filter-section a:nth-child(1){
+    /* border: 2px solid red; */
+    color: white;
+    width: 7vh;
+    text-align: center;
+    /* height: 4vh; */
+    background-color: #ea5b6e;
+  }
+
+  .container9-box{
+    /* border: 2px solid rgb(202, 18, 18); */
+    margin-top: 5vh;
+    /* height: 88%; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cont9-boxes{
+    /* border: 2px solid green; */
+    /* height: 100%; */
+    width: 30%;
+    /* background-color: #ea5b6e; */
+  }
+
+  .cont9-boxes-box11{
+    /* border: 2px solid greenyellow; */
+    /* height: 65%; */
+    position: relative;
+    background-color: #ea5b6e;
+
+    
+  }
+  
+  .cont9-boxes-box11 img{
+    width: 100%;
+    /* height: 100%; */
+    /* border: 2px solid black; */
+   
+  }
+
+  .img-content{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    display: none;
+    /* background-color: #ea5b6e; */
+  }
+  
+  .cont9-boxes-box11 img:hover{
+         z-index: -1;
+         opacity: 0.5;
+  }
+
+  .cont9-boxes-box11:hover .img-content{
+       display: block;
+  }
+
+
+
+  .cont9-boxes-box12{
+    /* border: 2px solid black; */
+    /* height: 34%; */
+    margin-top: 6%;
+    background-color: #ea5b6e;
+    position: relative;
+  }
+
+  .cont9-boxes-box12 img{
+    width: 100%;
+    /* height: 100%; */
+  }
+
+  .cont9-boxes-box12 img:hover{
+         z-index: -1;
+         opacity: 0.5;
+  }
+
+  .cont9-boxes-box12:hover .img-content{
+       display: block;
+  }
+
+  .small-box1{
+    /* border: 2px solid black; */
+    /* height: 32%; */
+    margin-bottom: 3vh;
+    /* position: relative; */
+  }
+
+  .small-box1 img{
+    width: 100%;
+    /* height: 100%; */
+  }
+
+
+
+
+  .cont9-boxes-box21{
+    position: relative;
+    background-color: #ea5b6e;
+  }
+  .cont9-boxes-box22{
+    position: relative;
+    background-color: #ea5b6e;
+  }
+  .cont9-boxes-box23{
+    position: relative;
+    background-color: #ea5b6e;
+  }
+
+  .cont9-boxes-box21 img:hover{
+         z-index: -1;
+         opacity: 0.5;
+  }
+
+  .cont9-boxes-box21:hover .img-content{
+       display: block;
+  }
+  .cont9-boxes-box22 img:hover{
+         z-index: -1;
+         opacity: 0.5;
+  }
+
+  .cont9-boxes-box22:hover .img-content{
+       display: block;
+  }
+  .cont9-boxes-box23 img:hover{
+         z-index: -1;
+         opacity: 0.5;
+  }
+
+  .cont9-boxes-box23:hover .img-content{
+       display: block;
+  }
+
+  @media (max-width:700px){
+    .cont9-boxes{
+        width: 48%;
+        /* margin-top: vh; */
+    }
+
+    .cont9-boxes-box3{
+         display: flex;
+         width: 100%;
+         /* height: 50%; */
+         /* border: 2px solid gold; */
+         flex-wrap: wrap;
+         justify-content: space-between;
+         
+    }
+
+    .small-box3{
+        width: 48%;
+        /* height: 58%; */
+    }
+  }
+
+  /* ---------------------section10---------------------- */
+
+   .container10{
+       /* border: 2px solid black;
+       height: 115vh; */
+       margin-top: 4vh;
+       width: 80%;
+       margin-left: 5%;
+   }
+
+   .container10 h1 span{
+      color: #da6573;
+   }
+
+   .cont10-main{
+    /* border: 2px solid green; */
+    margin-top: 3vh;
+    /* height: 106vh; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   }
+
+   .cont10-small{
+    /* border: 2px solid black;
+    height: 32%; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   }
+
+   .cont10-small-mbox1{
+    /* border: 2px solid green;
+    height: 100%; */
+    width: 30%;
+    margin-top: 4vh;
+   }
+   .cont10-small-mbox2{
+    /* border: 2px solid green;
+    height: 100%; */
+    width: 60%;
+    margin-right:8%;
+    color: #434648;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 4vh;
+   }
+
+   
+
+   .cont10-small-mbox1 img{
+    width: 100%;
+    height: 100%;
+   }
+
+   .post-details{
+    /* border: 2px solid yellow;
+    height: 3vh; */
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+   
+   }
+
+   .post-details a{
+    text-decoration: none;
+    color: #7b8186;
+    
+   }
+
+   .post-details a i{
+       color: #da6573;
+   }
+
+   .cont10-small-mbox2 a{
+    text-decoration: none;
+    color: #da6573;
+    margin-top: 2vh;
+   }
+
+   .post-details a:nth-child(2){
+    margin-left: 2vh;
+   }
+   .post-details a:nth-child(3){
+    margin-left: 2vh;
+   }
+
+   @media (max-width:1172px){
+    .cont10-small-mbox1{
+        width: 90%;
+        margin-top: 4vh;
+        margin-left: 6vh;
+    }
+
+    .cont10-small-mbox2{
+        width: 90%;
+        margin-top: 4vh;
+        margin-left: 6vh;
+    }
+   }
+
+   /* -----------------------section11----------------------- */
+
+  .section11{
+    /* border: 2px solid black; */
+    /* height: 90vh; */
+    margin-top: 8vh;
+    
+    
+   
+  }
+
+  .container11{
+    /* border: 2px solid black;
+    height: 70vh; */
+    width: 80%;
+    margin: auto;
+    margin-top: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .cont11-box1{
+       /* border: 2px solid green; */
+       /* height: 100%; */
+       width: 65%;
+       /* display: flex;
+       flex-direction: column;
+       justify-content: space-around; */
+  }
+  .cont11-box2{
+       /* border: 2px solid green;
+       height: 100%; */
+       width: 30%;
+  }
+
+  .cont11-box1 h2{
+    margin-left: 4vh;
+    margin-top: 2vh;
+  }
+
+  .line-11{
+    /* display: block; */
+    width: 25px;
+    height: 1.5px;
+    background-color: #db2c43;
+    margin-left: 4vh;
+    margin-top: 1vh;
+  }
+
+  .form-control input{
+      width: 90%;
+      height: 5.5vh;
+      margin-left: 4vh;
+      border-radius: 3px;
+      border: 1px solid grey;
+      margin-top: 2vh;
+  }
+
+  .form-control input:nth-child(3){
+    height: 32vh;
+  }
+
+  .cont11-box1 button{
+    width: 90%;
+      height: 5.5vh;
+      margin-left: 4vh;
+      border-radius: 3px;
+      /* border: 1px solid grey; */
+      cursor: pointer;
+      color:white;
+      background-color: #e33048;
+      margin-top: 2vh;
+  }
+
+  .cont11-box2 h2{
+    margin-left: 4vh;
+    margin-top: 2vh;
+  }
+
+  .cont11-card{
+    /* border: 2px solid black; */
+    width: 80%;
+    margin-left: 4vh;
+    /* height: 9vh; */
+    margin-top: 2vh;
+    display: flex;
+  }
+
+  .inter-card1{
+    /* border: 2px solid green; */
+    width: 20%;
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+  }
+  .inter-card2{
+    /* border: 2px solid green; */
+    width: 80%;
+    /* height: 100%; */
+  }
+
+  .inter-card1 i{
+    font-size: 30px;
+   
+  }
+
+  .inter-card2 span{
+    margin-top: 2px;
+  }
+
+   /* .cont11-card-3{
+    display: flex;
+    justify-content: space-between;
+   } */
+
+  .cont11-card-3 a{
+    color: rgb(44, 43, 43);
+   margin-left: 12px;
+   margin-top: 10px;
+}
+
+  .cont11-card-3 a i{
+    font-size: 20px;
+  
+  }
+
+  @media (max-width:1150px){
+    .cont11-box1{
+        width: 100%;
+        margin-top: 5vh
+    }
+    .cont11-box2{
+        width: 100%;
+        margin-top: 5vh
+    }
+  }
+
+
+
+  footer{
+    /* border: 2px solid black; */
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    margin-top: 8vh;
+    background: #17263c;
+  }
+ 
+  footer span{
+    margin-left: 10vh;
+    color: white;
+  }
+
     </style>
 </head>
 <body>
     <!-- --------section1----------- -->
-    <div class="container-1">
-         <div class="icon-bar">
-             <a href="###">
-                <i class="fa-brands fa-facebook-f" aria-hidden="true" ></i>
-            </a> 
-              
-            <a href="###">
-                <i class="fa-brands fa-twitter" aria-hidden="true" ></i>
-            </a> 
-            <a href="###">
-                <i class="fa-brands fa-google" aria-hidden="true" ></i>
-            </a> 
-            <a href="###">
-                <i class="fa-brands fa-instagram" aria-hidden="true" ></i>
-            </a> 
-            <a href="###">
-                <i class="fa-brands fa-git" aria-hidden="true" ></i>
-            </a>
-         </div>
-
-
-         <div class="text-container">
-           <h2> Hello, I am</h2>
-           <h1>John Doe</h1>
-           <h3> Frond end Designer | Developer </h3>
-           <button>
-            <i class="fa-solid fa-print"></i>
-            Print resume
-           </button>
-         </div>
+    <div class="container1-background">
+        <div class="container-1">
+            <div class="icon-bar">
+                <a href="###">
+                   <i class="fa-brands fa-facebook-f" aria-hidden="true" ></i>
+               </a> 
+                 
+               <a href="###">
+                   <i class="fa-brands fa-twitter" aria-hidden="true" ></i>
+               </a> 
+               <a href="###">
+                   <i class="fa-brands fa-google" aria-hidden="true" ></i>
+               </a> 
+               <a href="###">
+                   <i class="fa-brands fa-instagram" aria-hidden="true" ></i>
+               </a> 
+               <a href="###">
+                   <i class="fa-brands fa-git" aria-hidden="true" ></i>
+               </a>
+            </div>
+   
+   
+            <div class="text-container">
+              <h2> Hello, I am</h2>
+              <h1>John Doe</h1>
+              <h3> Frond end Designer | Developer </h3>
+              <button>
+               <i class="fa-solid fa-print"></i>
+               Print resume
+              </button>
+            </div>
+       </div>
     </div>
+   
     <!-- ---------------------section2------------------ -->
     <div class="navbar">
         <div class="navbar-main ">
@@ -225,5 +1320,650 @@
     </div>
 
     <!-- ---------------------section3--------------- -->
+      <div class="container3">
+          <div class="cont3-box sec3-box1">
+             <h3>Who am I ?</h3>
+             <span class="line-1"></span>
+            <h5>A Web Designer / Developer Located In Our Lovely Earth</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.sit amet, Qui deserunt consequatur fugit repellendusillo voluptas?</p>
+            <button class="btn-1">Download My CV</button>
+
+          </div>
+          <div class="cont3-box sec3-box2">
+            <h3>Personal Info</h3>
+            <span class="line-2"></span>
+            <div class="div-box1" >
+                
+            <p>Birthdate:09/13/1996 </p>
+            <p> Email:info@domain.com </p>
+            <p> Phone:+ (123) 456-7890</p>
+           <p> Skype:John_Doe</p>
+            <p>Adress:12345 Fake ST NoWhere AB Country.</p>
+
+            </div>
+            
+                <div class="logo2">
+                    <a href="###">
+                        <i class="fa-brands fa-facebook-f" aria-hidden="true" ></i>
+                    </a> 
+                      
+                    <a href="###">
+                        <i class="fa-brands fa-twitter" aria-hidden="true" ></i>
+                    </a> 
+                    <a href="###">
+                        <i class="fa-brands fa-google" aria-hidden="true" ></i>
+                    </a> 
+                    <a href="###">
+                        <i class="fa-brands fa-instagram" aria-hidden="true" ></i>
+                    </a> 
+                    <a href="###">
+                        <i class="fa-brands fa-git" aria-hidden="true" ></i>
+                    </a>
+
+                    
+                </div>
+      </div>
+      <div class="cont3-box sec3-box3">
+        <h3>My Expertise</h3>
+        <span class="line-3"></span>
+        <div class="sec3-internal-boxes">
+              <div class="sec3-internal-box0">
+                <div class="sec3-internal-box11">
+                    <i class="fa-solid fa-vector-square"></i>
+                </div>
+                <div class="sec3-internal-box12">
+                    <h4>UX Design</h4>
+                    <p>exercitat Repellendus, corrupt.</p>
+                </div>
+              </div>
+              <div class="sec3-internal-box0">
+                <div class="sec3-internal-box11">
+                    <i class="fa-solid fa-fill-drip"></i>
+                </div>
+                <div class="sec3-internal-box12">
+                    <h4>Web Development</h4>
+                    <p>Lorem ipsum dolor sit consectetur.</p>
+                </div>
+              </div>
+              <div class="sec3-internal-box0">
+                <div class="sec3-internal-box11">
+                    <i class="fa-solid fa-book-open-reader"></i>
+                </div>
+                <div class="sec3-internal-box12">
+                    <h4>Digital Marketing</h4>
+                    <p>voluptate commodi illo voluptatib.</p>
+                </div>
+              </div>
+
+        </div>
+        
+      </div>
+      </div>
+
+      <!-- -------------------section4--------------------- -->
+       
+      <div class="container4">
+          <span><span>My</span> Resume</span>
+          <div class="container4-main">
+               <div class="cont4-inner-box">
+                   <h2>Expertise</h2>
+                   <p class="line-4"></p>
+                   <div class="cont4-inner-box1">
+                      <h2>2017 - Present</h2>
+                      <p>UX Developer</p>
+                     <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.
+                     </p> 
+                     <hr>
+                      <h2>2015 - 2016</h2>
+                      <p>front-end devloper</p>
+                     <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.
+                     </p> 
+                     <hr>
+                      <h2>2014 - 2015</h2>
+                      <p>backend devloper</p>
+                     <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.
+                     </p> 
+                     <hr>
+                   </div>
+               </div>
+               <div class="cont4-inner-box">
+                <h2>Education</h2>
+                <p class="line-4"></p>
+                <div class="cont4-inner-box1">
+                   <h2>2017 - Present</h2>
+                   <p>College and degree</p>
+                  <p>
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.
+                  </p> 
+                  <hr>
+                   <h2>2015 - 2016</h2>
+                   <p>Diploma and tech</p>
+                  <p>
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.
+                  </p> 
+                  <hr>
+                   <h2>2014 - 2015</h2>
+                   <p>Graphic desiner</p>
+                  <p>
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.
+                  </p> 
+                  <hr>
+                </div>
+               </div>
+               <div class="cont4-inner-box cont4-inner-box3">
+                <div class="cont4-box1">
+                    <h2>Skills</h2>
+                <p class="line-4"></p>
+                <h4>hTL5 & CSS3</h4>
+                <div class="blood-row">
+                      <div class="iner-blood"></div>
+                </div>
+                <h4>JavaScript</h4>
+                <div class="blood-row">
+                      <div class="iner-blood"></div>
+                </div>
+                <h4>PHP</h4>
+                <div class="blood-row">
+                      <div class="iner-blood"></div>
+                </div>
+                <h4>SQL</h4>
+                <div class="blood-row">
+                      <div class="iner-blood"></div>
+                </div>
+                <h4>Laborum</h4>
+                <div class="blood-row">
+                      <div class="iner-blood"></div>
+                </div>
+                <h4>Tempora
+                </h4>
+                <div class="blood-row">
+                      <div class="iner-blood"></div>
+                </div>
+                </div>
+                <div class="cont4-box2">
+                    <h2>Language</h2>
+                    <p class="line-4"></p>
+                    <h4>Hindi</h4>
+                <div class="blood-row">
+                      <div class="iner-blood"></div>
+                </div>
+                    <h4>English</h4>
+                <div class="blood-row">
+                      <div class="iner-blood"></div>
+                </div>
+                    <h4>French</h4>
+                <div class="blood-row">
+                      <div class="iner-blood"></div>
+                </div>
+                </div>
+               
+                
+               </div>
+          </div>
+      </div>
+
+
+
+      <!-- -----------------------section5---------------------- -->
+
+      <div class="container5">
+
+         <div class="cont5-mid-box">
+               <div class="cont5-inner-box">
+
+                   <div class="cont5-divider-box divider-box-1part">
+                    <i class="fa-regular fa-clock"></i>
+                   </div>
+                   <div class="cont5-divider-box divider-box-2part">
+                    <h1>500</h1> 
+                    <p>Hours Worked</p>
+                   </div>
+
+               </div>
+               <div class="cont5-inner-box">
+                 <div class="cont5-divider-box divider-box-1part">
+                    <i class="fa-regular fa-calendar"></i>
+                   </div>
+                   <div class="cont5-divider-box divider-box-2part">
+                    <h1>505</h1> 
+                    <p>Project Finished</p>
+                   </div>
+               </div>
+               <div class="cont5-inner-box">
+                 <div class="cont5-divider-box divider-box-1part">
+                    <i class="fa-solid fa-martini-glass-citrus"></i>
+                   </div>
+                   <div class="cont5-divider-box divider-box-2part">
+                    <h1>200k </h1> 
+                    <p>Happy Clients</p>
+                   </div>
+               </div>
+               <div class="cont5-inner-box">
+                 <div class="cont5-divider-box divider-box-1part">
+                    <i class="fa-solid fa-heart"></i>
+                   </div>
+                   <div class="cont5-divider-box divider-box-2part">
+                    <h1>2K</h1> 
+                    <p>Coffe Drinked</p>
+                   </div>
+               </div>
+               
+         </div>
+
+      </div>
+
+         <!-- -------------------section6-------------------------- -->
+
+              <div class="container6">
+                  <div class="cont6-main-box">
+                    <h1>
+                        <span>My</span> services</h1>
+
+                       <div class="cont6-block-box">
+                           <div class="cont6-internal-box">
+                                  <div class="cont6-icon">
+                                    <i class="fa-solid fa-virus-slash"></i>
+                                  </div>
+                               <h5>Ullam</h5>
+                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</p> 
+
+                           </div>
+                           <div class="cont6-internal-box">
+                            <div class="cont6-icon">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                              </div>
+                           <h5>Asperiores</h5>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</p> 
+                           </div>
+                           <div class="cont6-internal-box">
+                            <div class="cont6-icon">
+                                <i class="fa-solid fa-cube"></i>
+                              </div>
+                           <h5>Tempora</h5>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</p> 
+                           </div>
+                           <div class="cont6-internal-box">
+                            <div class="cont6-icon">
+                                <i class="fa-solid fa-map"></i>
+                              </div>
+                           <h5>Provident</h5>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</p> 
+                           </div>
+                           <div class="cont6-internal-box">
+                            <div class="cont6-icon">
+                                <i class="fa-solid fa-signal"></i>
+                              </div>
+                           <h5>Consectetur</h5>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</p> 
+                           </div>
+                           <div class="cont6-internal-box">
+                            <div class="cont6-icon">
+                                <i class="fa-solid fa-business-time"></i>
+                              </div>
+                           <h5>Veritatis</h5>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</p> 
+                           </div>
+                       </div> 
+                  </div>
+
+              </div>
+
+         <!-- --------------------------------section7--------------------------      -->
+
+         <div class="container7">
+                <h1>
+                    <span>Packs</span>
+                    Pricing
+                </h1>
+
+                <div class="container7-main-box">
+                    <div class="cont7-sbox">
+                           <h2>Free</h2>
+                           <h2><sup>$</sup>0<sub>/mo</sub></h2>
+
+                           <div class="cont7-small-box">
+                            <h4>
+                                5 <span>Project</span>
+                               </h4>
+                               <h4>
+                                1GB <span>Storage</span>
+                               </h4>
+                               <h4>No Domain</h4>
+                               <h4>
+                                1 <span>User</span>
+                               </h4>
+                           </div>
+                           
+                       
+                      <button type="button">subscribe</button>
+
+
+                    </div>
+                    <div class="cont7-sbox">
+                        <h2>Basic</h2>
+                           <h2><sup>$</sup>10<sub>/mo</sub></h2>
+
+                           <div class="cont7-small-box">
+                            <h4>
+                                5 <span>Project</span>
+                               </h4>
+                               <h4>
+                                1GB <span>Storage</span>
+                               </h4>
+                               <h4>No Domain</h4>
+                               <h4>
+                                1 <span>User</span>
+                               </h4>
+                           </div>
+                           
+                       
+                      <button type="button">subscribe</button>
+
+                    </div>
+                    <div class="cont7-sbox price-card">
+                        <h2>Exclusive</h2>
+                           <h2><sup>$</sup>25<sub>/mo</sub></h2>
+
+                           <div class="cont7-small-box">
+                            <h4>
+                                5 <span>Project</span>
+                               </h4>
+                               <h4>
+                                1GB <span>Storage</span>
+                               </h4>
+                               <h4>No Domain</h4>
+                               <h4>
+                                1 <span>User</span>
+                               </h4>
+                           </div>
+                           
+                       
+                      <button type="button">subscribe</button>
+
+                    </div>
+                    <div class="cont7-sbox">
+                        <h2>Pro</h2>
+                           <h2><sup>$</sup>99<sub>/mo</sub></h2>
+
+                           <div class="cont7-small-box">
+                            <h4>
+                                5 <span>Project</span>
+                               </h4>
+                               <h4>
+                                1GB <span>Storage</span>
+                               </h4>
+                               <h4>No Domain</h4>
+                               <h4>
+                                1 <span>User</span>
+                               </h4>
+                           </div>
+                           
+                       
+                      <button type="button">subscribe</button>
+
+                    </div>
+                </div>
+         </div>
+
+
+        <!-- ------------section8--------------------------------- -->
+
+        <div class="container8">
+              <h1>I Am Available For FreeLance</h1>
+              <BUtton>Hire me</BUtton>
+        </div>
+
+    <!-- ---------------------section9------------------------------- -->
+
+      <div class="small-section">
+         <h1>
+           <span> My</span> Portfolio</h1>
+      </div>
+
+    <div class="container9">
+         <div class="filter-section">
+            <a href="">New</a>
+            <a href="">Advertising</a>
+            <a href="">Branding</a>
+            <a href="">Web</a>
+         </div>
+
+         <div class="container9-box">
+                <div class="cont9-boxes cont9-boxes-box1">
+                    <div class="cont9-boxes-box11">
+                        <img src="john-doe-pic3.jpg" alt="">
+                        <div class="img-content">
+                            <h2>WEB</h2>
+                             <p>Expedita corporis doloremque velit in totam!</p>
+                        </div>
+                    </div>
+                    <div class="cont9-boxes-box12">
+                       <img src="john-doe-pic4.jpg" alt="">
+                       <div class="img-content">
+                        <h2>BRANDING</h2>
+                         <p>Expedita corporis doloremque velit in totam!</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="cont9-boxes cont9-boxes-box2">
+                    <div class="cont9-boxes-box21  small-box1">
+                        <img src="john-doe-pic5.jpg" alt="">
+                        <div class="img-content">
+                            <h2>WEB</h2>
+                             <p>Expedita corporis doloremque velit in totam!</p>
+                        </div>
+                    </div>
+                    <div class="cont9-boxes-box22 small-box1">
+                       <img src="john-doe-pic6.jpg" alt="">
+                       <div class="img-content">
+                        <h2>BRANDING</h2>
+                         <p>Expedita corporis doloremque velit in totam!</p>
+                    </div>
+                    </div>
+
+                    <div class="cont9-boxes-box23 small-box1">
+                       <img src="john-doe-pic7.jpg" alt="">
+                       <div class="img-content">
+                        <h2>BRANDING</h2>
+                         <p>Expedita corporis doloremque velit in totam!</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="cont9-boxes cont9-boxes-box3">
+                    <div class="cont9-boxes-box21  small-box1 small-box3">
+                        <img src="john-doe-pic8.jpg" alt="">
+                        <div class="img-content">
+                            <h2>WEB</h2>
+                             <p>Expedita corporis doloremque velit in totam!</p>
+                        </div>
+                    </div>
+                    <div class="cont9-boxes-box22 small-box1 small-box3">
+                       <img src="john-doe-pic9.jpg" alt="">
+                       <div class="img-content">
+                        <h2>BRANDING</h2>
+                         <p>Expedita corporis doloremque velit in totam!</p>
+                    </div>
+                    </div>
+
+                    <div class="cont9-boxes-box23 small-box1 small-box3">
+                       <img src="john-doe-pic10.jpg" alt="">
+                       <div class="img-content">
+                        <h2>BRANDING</h2>
+                         <p>Expedita corporis doloremque velit in totam!</p>
+                    </div>
+                    </div>
+                </div>
+         </div>
+    </div>
+
+
+    <!-- --------------------------section10----------------------- -->
+  
+       <div class="container10">
+             <h1>Latest <span>News</span></h1>
+
+             <div class="cont10-main">
+                <div class="cont10-small">
+                    <div class="cont10-small-mbox1">
+                        <img src="john-doe-pic11.jpg" alt="">
+                    </div>
+                    <div class="cont10-small-mbox2">
+                        <h2>Consectetur adipisicing elit</h2>
+                        <div class="post-details">
+                            <a href="">By Admin</a>
+                            <a href="">
+                                <i class="fa-regular fa-heart"></i>
+                                234
+                            </a>
+                            <a href="">
+                                <i class="fa-regular fa-message"></i>
+                                123
+                            </a>
+                        </div>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.</p>
+
+                        <a href="">Read More>></a>
+                    </div>
+
+                    
+                </div>
+                <div class="cont10-small">
+                    <div class="cont10-small-mbox1">
+                        <img src="john-doe-pic12.jpg" alt="">
+                    </div>
+                    <div class="cont10-small-mbox2">
+                        <h2>Explicabo illo</h2>
+                        <div class="post-details">
+                            <a href="">By Admin</a>
+                            <a href="">
+                                <i class="fa-regular fa-heart"></i>
+                                234
+                            </a>
+                            <a href="">
+                                <i class="fa-regular fa-message"></i>
+                                123
+                            </a>
+                        </div>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.</p>
+
+                        <a href="">Read More>></a>
+                    </div>
+                </div>
+                <div class="cont10-small">
+                    <div class="cont10-small-mbox1">
+                        <img src="john-doe-pic13.jpg" alt="">
+                    </div>
+                    <div class="cont10-small-mbox2">
+                        <h2> Porro Quisqua</h2>
+                        <div class="post-details">
+                            <a href="">By Admin</a>
+                            <a href="">
+                                <i class="fa-regular fa-heart"></i>
+                                234
+                            </a>
+                            <a href="">
+                                <i class="fa-regular fa-message"></i>
+                                123
+                            </a>
+                        </div>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.</p>
+
+                        <a href="">Read More>></a>
+                    </div>
+                </div>
+             </div>
+        </div>
+
+   <!-- --------------------------------section11----------------------------------    -->
+   
+   <div class="section11">
+      
+    <div class="container11">
+              <div class="cont11-box1">
+                <h2>Send message</h2>
+                <div class="line-11"></div>
+
+                <form action="" class="form-control">
+                    <input type="text" placeholder="  Name*">
+                    <input type="email" placeholder="  Email*">
+                    <input type="text" placeholder="  message*">
+                </form>
+                  <button>Send message</button>
+              </div>
+              <div class="cont11-box2">
+                <h2>Get in touch</h2>
+                <div class="line-11"></div>
+                <div class="cont11-card">
+                    <div class="inter-card1">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                    </div>
+                    <div class="inter-card2">
+                        <h3>Phone :</h3>
+                        
+                        <span>+ (123) 456-789</span>
+                    </div>
+                </div>
+                <div class="cont11-card">
+                    <div class="inter-card1">
+                        <i class="fa-solid fa-map"></i>
+                    </div>
+                    <div class="inter-card2">
+                        <h3>Address :</h3>
+                        
+                        <span>12345 Fake ST NoWhere AB Country.</span>
+                    </div>
+                </div>
+                <div class="cont11-card">
+                    <div class="inter-card1">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <div class="inter-card2">
+                        <h3>Email :</h3>
+                        
+                        <span>info@domain.com</span>
+                    </div>
+                </div>
+                <div class="cont11-card cont11-card-3">
+                   
+                        <a href="###">
+                           <i class="fa-brands fa-facebook-f" aria-hidden="true" ></i>
+                       </a> 
+                         
+                       <a href="###">
+                           <i class="fa-brands fa-twitter" aria-hidden="true" ></i>
+                       </a> 
+                       <a href="###">
+                           <i class="fa-brands fa-google" aria-hidden="true" ></i>
+                       </a> 
+                       <a href="###">
+                           <i class="fa-brands fa-instagram" aria-hidden="true" ></i>
+                       </a> 
+                       <a href="###">
+                           <i class="fa-brands fa-git" aria-hidden="true" ></i>
+                       </a>
+                    
+                </div>
+              </div>
+    </div>
+
+
+   </div>
+
+   <!-- ---------------------------section12------------------------------ -->
+
+  <footer>
+       <span>© 2045 Created With  By DevCRUD</span>
+  </footer>
+
+
+
+
+
 </body>
 </html>
