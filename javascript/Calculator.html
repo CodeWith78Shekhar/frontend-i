@@ -3,9 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
+    <style>
+       *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+       }    
+    
+      .container1{
+           /* border: 2px solid black; */
+           width: 20%;
+           /* height: 70vh; */
+           margin: auto;
+           margin-top: 10vh;
+           background-color: black;
+           color: aliceblue;
+           border-radius: 10px;
+      }
+      
+      .cont1-box1{
+            /* border: 2px solid black; */
+            width: 100%;
+            /* height: 15vh; */
+      }
+
+      .cont1-box2{
+        /* border: 2px solid green; */
+        width: 100%;
+        /* height: 55vh; */
+      }
+
+      button{
+        width: 20%;
+        height: 10vh;
+        border-radius: 100%;
+       margin-left: 3%;
+       margin-top: 5px;
+       background-color: rgb(44, 43, 43);
+       color: white;
+       font-size: 25px;
+      
+       border: none;
+       cursor: pointer;
+       margin-bottom: 5px;
+        
+        /* justify-content: space-around; */
+      }
+
+      
+      
+      #inp1{
+        width: 100%;
+        height: 7.5vh;
+        color: white;
+       font-size: 25px;
+       display: flex;
+       align-items: center;
+       
+      }
+      #inp2{
+        width: 100%;
+        height: 7.5vh;
+        color: white;
+       font-size: 25px;
+      }
+
+      .yellow{
+        background-color: rgb(226, 86, 16);
+      }
+
+      .grey{
+          background-color: rgb(87, 85, 85);
+          color: black;
+      }
+
+      body{
+        background-color: rgb(71, 131, 111);
+      }
+
+    </style>
 </head>
 <body>
+    <div class="container1">
+          <div class="cont1-box1">
+
+            <div id="inp1"></div>
+            
+            <div id="inp2"></div>
+          </div>
+
+          <div class="cont1-box2">
+               <button value="None" id="AC" class="grey">AC</button>
+               <button value="None" id="DEL" class="grey">DEL</button>
+               
+               <button value="%" class="grey">%</button>
+               <button value="/" class="yellow">/</button>
+               <button value="7">7</button>
+               <button value="8">8</button>
+               <button value="9">9</button>
+               <button value="*" class="yellow">*</button>
+               <button value="4">4</button>
+               <button value="5">5</button>
+               <button value="6">6</button>
+               <button value="-" class="yellow">-</button>
+               <button value="1">1</button>
+               <button value="2">2</button>
+               <button value="3">3</button>
+               <button value="+" class="yellow">+</button>
+               <button value="0">0</button>
+               <button value="00">00</button>
+               <button value=".">.</button>
+               <button value="=" id="equal" class="yellow">=</button>
+          </div>
+    </div>
+
+    <script>
+       let a =   document.querySelectorAll("button");
+    //    console.log(a)
+
+   
+        
+       for(let i  of a ){
+            i.onclick = function(){
+            //   console.log(i.innerText)
+            let b = i.value;
+            // console.log(b)
+            document.getElementById("inp1").innerText += b;
+            }
+       }
+
+       document.getElementById("equal").onclick = function(){
+              let a = document.getElementById("inp1").innerText;
+              console.log(a);
+              let c = eval(a);
+              console.log(c);
+              document.getElementById("inp2").innerText = c;
+       }
+
+       document.getElementById("AC").onclick = function(){
+            document.getElementById("inp1").innerText = "";
+            document.getElementById("inp2").innerText = "";
+       }
+
+      document.getElementById("DEL").onclick = function(){
+      let a=   document.getElementById("inp1").innerText 
+        document.getElementById("inp1").innerText = a.slice(0,-1) 
+        document.getElementById("inp2").innerText = "";
+      }
+     
     
+       
+
+
+    </script>
 </body>
 </html>
