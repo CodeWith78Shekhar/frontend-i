@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inp">
+    <button id="sub">submit</button>
+    <button id="print">Print names</button>
+    <h1></h1>
+    <script>
+        let arr = [];
+         document.getElementById("sub").onclick = function(){
+            let a = document.getElementById("inp").value;
+            // document.getElementById("inp").value = "";
+            // document.getElementById("inp").focus();
+           
+           // console.log(a)
+            arr.push(a);
+            console.log(arr);
+         }
+
+         document.getElementById("print").onclick = function(){
+            let count = 0;
+         let ans = setInterval(() => {
+
+                if(count==arr.length){
+
+                    clearInterval(ans)
+                }
+
+                else{
+                    
+                                    document.querySelector("h1").innerHTML += arr[count] + ",";
+                                    console.log(arr[count])
+                                    count++
+
+                }
+              
+            }, 1000);
+
+           
+         }
+        // let arr = [10,20,30,40,50];
+        //    let a = arr.shift();
+        //    let b = arr.pop();
+
+        //    arr.unshift(b);
+        //    arr.push(a);
+        //    console.log(arr);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eiser</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+     .container1{
+        /* border: 2px solid black; */
+        /* height: 12vh; */
+        display: flex;
+       
+     }
+
+     .cont1-box{
+        /* border: 2px solid green; */
+        width: 33.33%;
+       height: 12vh;
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+      
+     }
+     
+     .cont1-boxes2 a{
+        text-decoration: none;
+        color: black;
+     }
+
+     .cont1-boxes2 a:hover{
+        color:rgb(48, 202, 48);
+     }
+
+     .cont1-boxes2 a:nth-child(1){
+        color:rgb(48, 202, 48);
+     }
+
+
+     .cont1-boxes3 ul{
+        list-style-type:none;
+        display: flex;
+        justify-content: space-between;
+       
+       
+    }
+    
+    .cont1-boxes3 ul li{
+        margin-left: 15px;
+    } 
+
+    .icon-bar{
+        display: none;
+    }
+
+    @media (max-width:650px) {
+       .icon-bar{
+        display: block;
+       }
+
+       .cont1-boxes3 ul{
+        display: none;
+       }
+
+       .cont1-boxes2 a{
+        display: none;
+       }
+
+       .cont1-boxes1 a img{
+          /* border: 2px solid black; */
+          margin-left: 10vh;
+       }
+    }
+   /* -----------------------------container2-----------------------------------------   */
+
+     .container2{
+        /* border: 2px solid black; */
+        height: 100vh;
+        background: url(https://themewagon.github.io/eiser/img/banner/banner-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-position: center; */
+        display: flex;
+        align-items: center;
+     }
+
+    .inner-cont2{
+        /* border: 2px solid black; */
+        height: 40vh;
+        width: 100%;
+    }
+
+    .innerBox{
+        /* border: 2px solid black; */
+        width: 80%;
+        height: 100%;
+        margin-left: 12%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      
+    }
+    .innerBox h4{
+        font-weight: 100;
+        
+       
+    }
+    .innerBox h3{
+        font-weight: 100;
+        margin-top: 3vh;
+       
+    }
+
+    .innerBox h1{
+        font-size: 50px;
+       
+    }
+
+    .innerBox h1 span{
+        color:rgb(48, 202, 48) ;
+    }
+
+    .innerBox button{
+        width: 20vh;
+        height: 5vh;
+        background-color:rgb(48, 202, 48);
+        color: white;
+        margin-top: 4vh;
+    }
+
+    /* ---------------------container-3--------------------------------------- */
+    .container3{
+        /* border: 2px solid black; */
+        width: 100%;
+        /* height: 25vh; */
+    }
+
+    .cont3-inner{
+        /* border: 2px solid black; */
+        width: 80%;
+        /* height: 25vh; */
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .cont3-cont-boxes{
+        /* border: 2px solid green; */
+        width: 25%;
+        /* height: 100%; */
+        display: flex;
+        margin-top: 5vh; 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cont3-cont-boxes a i{
+        font-size: 30px;
+        color: rgb(31, 31, 31);
+    }
+
+    .cont3-cont-boxes h4{
+        margin-top: 15px;
+        font-weight: 600;
+        color: rgb(39, 38, 38);
+    }
+    .cont3-cont-boxes h5{
+        margin-top: 15px;
+        font-size: 17px;
+        color: grey;
+    }
+
+    @media (max-width:1040px){
+        .cont3-cont-boxes{
+            width: 50%;
+            margin-top: 10vh;
+        }
+    }
+    @media (max-width:600px){
+        .cont3-cont-boxes{
+            width: 100%;
+            margin-top: 10vh;
+        }
+    }
+
+    /* -------------------------container4--------------------------------- */
+
+    .container4{
+        /* border: 2px solid black; */
+        /* height: 15vh; */
+        margin-top: 15vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .container4 h2{
+        margin-bottom: 2vh;
+    }
+    .container4 p{
+        margin-top: 2vh;
+    }
+
+    .container4 hr{
+        width: 35vh;
+    }
+
+    @media (max-width:400px){
+        .container4 h2,p{
+            font-size: 15px;
+        }
+    }
+    /* -----------------------container5----------------------------------------- */
+
+    .container5{
+        /* border: 2px solid black; */
+       
+        /* height: 68vh; */
+        width: 70%;
+        margin: auto;
+        margin-top: 15vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .cont5-innerBox{
+        /* border: 2px solid black; */
+        /* height: 100%; */
+        width: 32%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .cont5-innerBox img{
+             width: 100%;
+          //   height: 100%;
+    }
+
+    .cont5-innerBox h2 span{
+        color: gray;
+        font-weight: 300;
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    .cont5-innerBox h2{
+        margin-bottom: 10px;
+        margin-left: 10PX;
+    }
+
+    .cont5-innerBox P{
+        margin-left: 10PX;
+    }
+
+    @media (max-width:956px){
+        .cont5-innerBox{
+            width: 48%;
+            margin-top: 8vh;
+        }
+    }
+    @media (max-width:634px){
+        .cont5-innerBox{
+            width: 100%;
+            margin-top: 8vh;
+        }
+    }
+
+    .transc-bar{
+        /* border: 2px solid rgb(164, 129, 129); */
+        height: 7vh;
+        width: 90%;
+        background: rgba(113,205,20,0.4);
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+        position: absolute;
+        left: 2.2vh;
+        /* top: 270px; */
+    }
+
+    .transc-bar i{
+        font-size: 22px;
+        background-color: white;
+        border-radius: 100%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    .img-box{
+        /* border: 2px solid black; */
+        position: relative; 
+         overflow: hidden; 
+        
+    }
+
+    .img-box:hover  .transc-bar{
+        transform: translatey(-109%);
+        transition: all 600ms ease-out;
+    }
+
+    /* ------------------------container6-------------------------- */
+
+    .container6{
+        /* border: 2px solid black; */
+        height: 70vh;
+        margin-top: 15vh;
+        background: url(https://themewagon.github.io/eiser/img/offer-bg.png
+);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .cont6-internal{
+        /* border: 2px solid green; */
+        /* width: 40%; */
+        /* height: 50%; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* padding-left: 45vh; */
+        position: relative;
+        left: 15%;
+    }
+
+    .cont6-internal h1{
+             font-size: 95px;
+             margin-bottom: 5vh;
+    }
+
+    .cont6-internal p:nth-child(1){
+        font-size: 25px;
+        color: rgb(73, 71, 71);
+        margin-bottom: 2vh;
+    }
+
+    .cont6-internal h4{
+        color: rgb(39, 38, 38);
+        font-weight: 300;
+    }
+
+    .cont6-internal button{
+        width: 18vh;
+        padding: 1.5vh;
+        border-radius: 10px;
+        background-color: rgb(78, 228, 58);
+        color: white;
+        border: none;
+    }
+
+    @media (max-width:950px){
+        .container6{
+            background: none;
+            background: #f6f6f6;
+        }
+
+        .cont6-internal{
+            left: 0;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container1">
+           <div class="cont1-box cont1-boxes1">
+           <a href="">
+            <img src="https://themewagon.github.io/eiser/img/logo.png" alt="">
+           </a>
+               
+           </div>
+           <div class="cont1-box cont1-boxes2">
+              <a href="">Home</a>
+              <a href="">Shop</a>
+              <a href="">Blog</a>
+              <a href="">Pages</a>
+              <a href="">Contact</a>
+           </div>
+           <div class="cont1-box cont1-boxes3">
+            <ul>
+                 <li>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                
+                 </li>
+                 <li>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                 </li>
+                 <li>
+                    <i class="fa-regular fa-user"></i>
+                 </li>
+                 <li>
+                    <i class="fa-regular fa-heart"></i>
+                 </li>
+            </ul>
+
+            <div class="icon-bar">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+           </div>
+    </div>
+
+    <!-- -------------------------container-2-------------------------------------- -->
+
+    <div class="container2">
+           <div class="inner-cont2">
+                <div class="innerBox">
+                    <h4>MEN COLLECTION</h4>
+                    <h1>
+                        <span>Show</span>
+                         Your</h1>
+                    <h1>Personal
+                        <span> Style</span>
+                       </h1>
+                    <h3>Fowl saw dry which a above together place.</h3>
+                    <button>View collection</button>
+                </div>
+           </div>
+    </div>
+
+     <!-- ---------------------------container-3------------------------------- -->
+   
+     <div class="container3">
+          <div class="cont3-inner">
+                    <div class="cont3-cont-boxes">
+                        <a href="">
+                            <i class="fa-solid fa-sack-dollar"></i>
+                        </a>
+                        <h4>MONEY BACK GURANTEE</h4>
+                        <h5>Shall open divide a one</h5>
+                    </div>
+                    <div class="cont3-cont-boxes">
+                        <a href="">
+                            <i class="fa-solid fa-truck"></i>
+                        </a>
+                        <h4>FREE DELIVERY</h4>
+                        <h5>Shall open divide a one</h5>
+                    </div>
+                    <div class="cont3-cont-boxes">
+                        <a href="">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                        <h4>ALWAYS SUPPORT</h4>
+                        <h5>Shall open divide a one</h5>
+                    </div>
+                    <div class="cont3-cont-boxes">
+                        <a href="">
+                            <i class="fa-solid fa-file-invoice"></i>
+                        </a>
+                        <h4>SECURE PAYMENT</h4>
+                        <h5>Shall open divide a one</h5>
+                    </div>
+          </div>
+     </div>
+
+
+     <!-- ---------------------------container4----------------------------- -->
+             <div class="container4">
+              <h2>FEATURED PRODUCT</h2>
+              <hr>
+              <p>Bring called seed first of third give itself now ment</p>
+             </div>
+
+    <!-- ------------------------container5------------------------------ -->
+            <div class="container5">
+                  <div class="cont5-innerBox">
+                    <div class="img-box">
+                        <img src="https://themewagon.github.io/eiser/img/product/feature-product/f-p-1.jpg" alt="">
+                     <div class="transc-bar">
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                     </div>   
+                    </div>
+                       
+                       <p>LATEST MENS SNEAKER</p>
+                       <h2>
+                        $25.00  <span><del>35.00</del></span>
+                       </h2>
+                       
+                  </div>
+                  <div class="cont5-innerBox">
+                    <div class="img-box">
+                        <img src="https://themewagon.github.io/eiser/img/product/feature-product/f-p-2.jpg
+                        " alt="">
+                     <div class="transc-bar">
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                     </div>   
+                    </div>
+                    
+                    <p>RED WOMEN PURSE</p>
+                    <h2>
+                     $25.00  <span><del>35.00</del></span>
+                    </h2>
+                  </div>
+                  <div class="cont5-innerBox">
+                    <div class="img-box">
+                        <img src="https://themewagon.github.io/eiser/img/product/feature-product/f-p-3.jpg" alt="">
+                     <div class="transc-bar">
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                     </div>   
+                    </div>
+                   
+                    <p>LATEST MENS STYLIST WATCH</p>
+                    <h2>
+                     $25.00  <span><del>35.00</del></span>
+                    </h2>
+                  </div>
+            </div>
+
+        <!-- ----------------section6-----------------------------------     -->
+
+        <div class="container6">
+                    <div class="cont6-internal">
+                         <p>ALL MEN'S COLLECTION</p>
+                         <h1>50% OFF</h1>
+                         <button>Discover now</button> <br>
+                         <h4>Limited Time Offer</h4>
+                    </div>
+        </div>
+
+</body>
+</html>

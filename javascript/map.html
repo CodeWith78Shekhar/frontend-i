@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <SCript>
+   //MAP - MAP CREATS A NEW ARRAY WITH THE RESULT OF SOME OPERATION.THE VALUE ITS CALLBACK RETURNS ARE USED TO FORM NEW ARRAY
+   // arr.map(callbackfnx(value,index,array))
+
+// let nums = [12,45,63];
+//  let newArr =   nums.map((val)=> {
+//     return val*2;
+//    })
+
+//    console.log(newArr);
+//    console.log(nums);
+
+//   let a = [10,20,30,40];
+//   let b = a.map((val)=>{
+//     return val-1;
+//   })
+
+//   console.log(b);
+   
+//let arr = [1,2,3,4,5,6];
+// let newArr = arr.map((val)=>{
+    
+//     return val%2 ==0 ? "even":"odd";
+
+// })
+
+  // console.log(newArr)
+
+//    let c = [10,-20,"m"]
+//    let d = c.map((val)=>{
+//        if(val >=0){
+//          return "positive num";
+//        }
+
+//        else if(val < 0){
+//         return "negative number";
+//        }
+
+//        else if(val == 'a','b'){
+//        return "its a alphabet";
+//        }
+
+
+//    })
+
+//    console.log(d)
+
+
+
+
+   //FILTER - FILTER CREATS A NEW ARRAY OF ELEMENTS THAT GIVE TRUE FOR A CONDITION/FILTER.
+
+//    let arr = [1,2,3,4,5,6,7,8,9]
+      
+//    let evenArr = arr.filter((val)=>{
+//       return val%2===0;
+//    })
+
+//    console.log(evenArr)
+
+// let a =["ram",2,5,"shyam",'a','b',89]
+// let b = a.filter((val)=>{
+//     return typeof(val) == "string";
+// })
+//  console.log(b);
+
+
+//REDUCE- REDUCE PERFORM SOME OPERATIONS & REDUCES THE ARRAY TO A SINGLE VALUE.IT RETURNS THAT SINGLE VALUE.
+
+//   let arr = [1,2,3,4];
+
+//   const output = arr.reduce((prev,curr)=>{
+//     return prev + curr;
+//   })
+
+//   console.log(output);
+
+//  let arr = [5,6,7,2,1];
+
+//  const output = arr.reduce((prev,curr)=>{
+//     return prev > curr ? prev:curr;
+//  })
+
+//  console.log(output);
+
+let a =[1,5,2,3,8,1,15,2]
+let b = a.reduce((prev,curr)=>{
+
+    if(prev>curr){
+        return prev;
+    }else{
+        return curr;
+    }
+
+})
+
+console.log(b);
+
+
+//Q-we are given array of marks of students . filter out of the marks of student that scored 90+;
+
+//   let arr = [87,96,93,64,78,100]
+    
+//   let newArr = arr.filter((val)=>{
+//       return val >90 ? val : null;
+//   })
+
+//   console.log(newArr)
+
+ 
+//Q- take a number n as input from user .ceate an array of 
+//numbers from 1 to n ,use reduce method and cal sum
+
+//let arr = [1,2,3,4,5,6,7,8,9,10];
+
+// const result= arr.reduce((prev,curr)=>{
+//     return prev * curr;
+
+//     //the return valuse is store in prev . and after one step curr value will be change and prev value will be updated with return ;
+// })
+
+// console.log(result)
+    </SCript>
+</body>
+</html>
+
+
