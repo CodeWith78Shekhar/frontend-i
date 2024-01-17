@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=0.5, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            /* border: 2px solid black; */
+            width: 100%;
+            height: 80vh;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .mini{
+            width: 19%;
+            height: 100%;
+            border-radius: 2;
+            transition: all 1s ease-in;
+            background-repeat: no-repeat;
+            background-size: cover;
+            flex: 0.5;
+            color: whiter;
+            position: relative;
+            
+        }
+
+        .mini.active {
+            flex: 5;
+        }
+
+        .mini h3{
+            font-size: 24px;
+            position: absolute;
+            bottom: 30px;
+            left: 20px;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- meta tag use
+    prev version of html -->
+    <h1>This is expanding cards</h1>
+    <div id="container">
+        <div class="mini " style="background-image: url(photo-1608315398428-c6d76804838d.avif); ;">
+           <h3>winter city</h3>
+        </div>
+        <div class="mini" style="background-image: url('istockphoto-494623477-612x612.jpg');">
+            <h3>winter city</h3>
+        </div>
+        <div class="mini" style="background-image: url('istockphoto-507218514-612x612.jpg');">
+            <h3>winter city</h3>
+        </div>
+        <div class="mini " style="background-image: url('istockphoto-619639650-170667a.webp');">
+            <h3>winter city</h3>
+        </div>
+        <div class="mini" style="background-image: url('131122105036-winter-cities-ottawa.jpg');">
+            <h3>winter city</h3></div>
+    </div>
+
+    <script>
+       
+    let a =   document.querySelectorAll(".mini") ;
+   // console.log(a)
+  //  let count=0.5 ;
+   for(let i=0;i<a.length;i++){
+
+      
+        a[i].onclick = function(){
+         removeActiveClass(); 
+       a[i].classList.add("active");
+    //    document.querySelector("active").style.flex = 0.5;
+    //  console.log(count)
+   }
+//   if(count==0.5){
+//     a[i].style.flex = count;
+//     document.getElementByClassName("active").style.flex = 5;
+
+
+//   } 
+}     
+
+function removeActiveClass(){
+   a.forEach((card) => {
+    card.classList.remove("active");
+   });
+}
+
+    </script>
+</body>
+</html>

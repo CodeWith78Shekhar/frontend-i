@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>crousel</title>
+
+    <style>
+      .container {
+        /* border: 2px solid black; */
+        width: 100%;
+        height: 40vh;
+      }
+
+      .crousel {
+        /* border: 2px solid green; */
+        height: 100%;
+        width: 50%;
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+        /* transition: all 400ms ease-out; */
+      }
+
+      .crousel img {
+        position: absolute;
+      }
+
+      img.active {
+        /* right: 200px;   */
+        /* z-index: 999;  */
+        transition: all 800ms ease-in-out;
+        transform: translatex(-100%);
+      }
+
+      img.unactive {
+        transition: all 0.5s ease-in-out;
+        transform: translatex(0px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="crousel">
+        <img
+          src="https://i.pinimg.com/originals/a4/96/c2/a496c2b6bc5d7cfe0e0674f6598c38ad.jpg"
+          alt=""
+          style="width: 100%; height: 100%"
+        />
+        <img
+          src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg"
+          alt=""
+          style="width: 100%; height: 100%"
+        />
+        <img
+          src="https://t3.ftcdn.net/jpg/05/28/86/66/360_F_528866602_aiVwnOnkooTrqo3MgicCf83SVVzt1Gnd.jpg"
+          alt=""
+          style="width: 100%; height: 100%"
+        />
+        <img
+          src="https://c4.wallpaperflare.com/wallpaper/131/774/322/background-pictures-nature-hd-images-1920x1200-wallpaper-preview.jpg"
+          alt=""
+          style="width: 100%; height: 100%"
+        />
+      </div>
+    </div>
+
+    <button id="btn1">prev</button>
+    <button id="btn">Next</button>
+
+    <script>
+      let a = document.querySelectorAll("img");
+      // console.log(a)
+    /// let flag = 0;
+      let pointer = a.length - 1;
+      document.getElementById("btn").addEventListener("click", () => {
+        a[pointer].classList.remove("unactive");
+        a[pointer].classList.add("active");
+
+        if (pointer <= 0) {
+          a[pointer].classList.remove("active");
+        }
+
+        pointer--;
+        console.log(pointer);
+      });
+
+      document.getElementById("btn1").addEventListener("click", () => {
+        pointer++;
+
+        if (pointer >= a.length) {
+          pointer = a.length - 1;
+        }
+
+        // a[pointer].classList.remove("active");
+        a[pointer].classList.add("unactive");
+      });
+    </script>
+  </body>
+</html>

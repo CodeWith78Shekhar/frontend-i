@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+    // const obj1 = {
+
+    //     name : "Aman",
+    //     age : 15,
+    //     city : "jaipur",
+    //     pin_code : 302002
+    // }
+
+    // const obj2 = {
+
+    //     name : "mohit",
+    //     age : 25,
+    //     city : "jaipur",
+    //     pin_code : 302003
+    // }
+
+    // for(let i in obj2){
+    //  //   console.log(i)    -- key
+    //  //   console.log(obj2[i])   ----value print
+    // }
+
+    // obj2.name = "rahul"
+    // console.log(obj2)
+
+   // console.log(obj1.name , obj1.age , obj1.city , obj1.pin_code)
+ //   console.log(obj2.name , obj2.age , obj2.city , obj2.pin_code)
+
+
+
+
+
+ let arr =[
+    {
+        name : "rahul" ,
+        age : 20 ,
+        city :"jaipur"
+    },
+
+    {
+        name : "aman" ,
+        age : 45 ,
+        city : "lucknow"
+    },
+
+    {
+        name : "ajay",
+        age : 26,
+        city : "kanpur"
+    },
+    {
+        name : "ramu",
+        age : 15,
+        city : "gazaibad"
+    },
+    {
+        name : "babu",
+        age : 10,
+        city : "kayamganj"
+    },
+    {
+        name : "vikash",
+        age : 36,
+        city : "rampur"
+    }
+ ]
+
+// console.log(arr)
+
+//   arr.forEach((value)=>{
+     
+//      document.write(value.name," ", value.age ," ", value.city,"<br>")
+
+//   })
+
+//   let b = arr.map((value)=>{
+//     //   document.write(value.name," ",value.age," ",value.city,"<br>")
+
+//   })
+
+//  let newarr =  arr.filter((value)=>{
+//           if(value.age>18){
+//             return value;
+//           }
+//   })
+
+//    console.log(newarr)
+
+//    newarr.forEach((value)=>{
+//     document.write(value.name," ",value.age," ",value.city,"<br>")
+//    })
+
+ 
+let myObj = {
+    name: "john",
+    age: 30,
+    cars: [
+        {name:"Ford", models:["Fiesta","Focus","Mustang"]},
+        {name:"BMW", models:["320","X3","X5"]},
+        {name:"Fiat", models:["500","Panda"]}
+    ]
+}
+
+// let car= myObj.cars.map((value) => {
+//     //  console.log(value);
+//     return value;
+
+//  });
+
+let opt = myObj.cars.filter((item)=>{
+    return item.name == "BMW";
+
+})
+
+let print = opt.map((item)=>{
+    console.log(item.name)
+    item.models.map((d)=>{
+        console.log(d);
+    })
+})
+
+    </script>
+</body>
+</html>

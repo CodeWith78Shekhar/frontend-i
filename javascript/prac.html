@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="inp" />
+    <button>submit</button>
+    <button id="prnt">print</button>
+    <button id="odd">odd pop</button>
+    <button id="pop">even pop</button>
+    <button id="shift">shift</button>
+    <button id="unshift">unshift</button>
+
+    <br />
+
+    <input type="text" id="inp2" />
+    <button id="filter">filter</button>
+
+    <h1 id="h1"></h1>
+    <h1 id="h2"></h1>
+
+    <script>
+      let arr1 = [];
+      let arr2 = [];
+      
+      let btn = document.querySelector("button");
+      btn.addEventListener("click", function () {
+        let a = document.querySelector("input").value;
+        document.querySelector("input").value = "";
+        document.querySelector("input").focus;
+        //  console.log(a)
+
+        if (a % 2 == 0) {
+          arr1.push(a);
+          // console.log(arr1)
+        } else {
+          arr2.push(a);
+          // console.log(arr2)
+        }
+      });
+
+      document.getElementById("prnt").addEventListener("click", function () {
+        document.getElementById("h1").innerHTML = "even " + arr1;
+        document.getElementById("h2").innerHTML = "odd " + arr2;
+      });
+
+      document.getElementById("pop").addEventListener("click", function () {
+        arr2.pop();
+        console.log(arr2);
+      });
+      document.getElementById("odd").addEventListener("click", function () {
+        arr1.pop();
+        console.log(arr1);
+      });
+
+      document.getElementById("unshift").addEventListener("click", function () {
+        let b = document.getElementById("inp").value;
+        if (b % 2 == 0) {
+          arr1.unshift(b);
+        } else {
+          arr2.unshift(b);
+        }
+        console.log(arr1);
+        console.log(arr2);
+      });
+
+      document.getElementById("shift").addEventListener("click", function () {
+        arr1.shift();
+        arr2.shift();
+
+        console.log(arr1);
+        console.log(arr2);
+      });
+
+      document.getElementById("filter").addEventListener("click", function () {
+        let a = document.getElementById("inp2").value;
+
+        let x = arr1.filter((val) => {
+          return val == a;
+        });
+
+        let y = arr2.filter((val) => {
+          return val == a;
+        });
+
+        let z = arr1.map((val) => {
+          if (val == x[0] || val == y[0]) {
+            console.log("its available in arr1");
+          } else {
+            console.log("its not available in arr1");
+          }
+        });
+
+        let p = arr2.map((val) => {
+          if (val == x[0] || val == y[0]) {
+            console.log("its available in arr2");
+          } else {
+            console.log("its not available in arr2");
+          }
+        });
+
+        //   console.log("its available in arr1" + x)
+        // console.log( "its available in arr2" +y)
+      });
+    </script>
+  </body>
+</html>
