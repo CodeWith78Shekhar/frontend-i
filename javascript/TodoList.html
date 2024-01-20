@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo</title>
+</head>
+
+<body>
+    <input type="text" />
+    <button id="submit">Submit</button>
+    <ul id="ul" style="margin: 10"></ul>
+
+    <script>
+        document.getElementById("submit").onclick = function () {
+            let val = document.querySelector("input").value;
+            document.getElementById("ul").innerHTML += `<div class="container">
+                                                                <li >${val}</li>
+                                                                <button class="complete">complete</button>
+                                                                <button class="delete" style= "margin-left : 10px">delete</button>
+                                                                </div>`
+
+            let z = document.querySelectorAll(".container");
+            console.log(z);
+
+            let b = document.querySelectorAll(".complete");
+            let c = document.querySelectorAll("li");
+            b.forEach((e, i) => {
+                e.onclick = function () {
+                    let a = c[i].innerText;
+                    // c[i].innerHTML = `<li ><del> ${a}</del></li>`;
+                    c[i].style.cssText = "text-decoration:line-through"
+                };
+            });
+
+            let d = document.querySelectorAll(".delete");
+           
+            d.forEach((e, i) => {
+                e.onclick = function () {
+                    // z[i].innerHTML = "";
+                   z[i].remove();
+                
+                    console.log(e,i)
+                };
+            });
+        };
+        // d.forEach((e, i,arr) => {
+        //         e.onclick = function () {
+        //             let count=0;
+        //             z[i].innerHTML = "";
+        //             count++;
+
+                
+        //             console.log(e,i,arr)
+        //         };
+        //     });
+        // };
+    </script>
+</body>
+
+</html>

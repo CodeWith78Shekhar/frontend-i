@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>stopwatch</title>
-</head>
-<body>
+  </head>
+  <body>
     <h2>
-        <span id="hour">00</span>:
-    <span id="minute">00</span>:
-    <span id="second">00</span>
+      <span id="hour">00</span>: <span id="minute">00</span>:
+      <span id="second">00</span>
     </h2>
 
     <button id="srt">start</button>
@@ -17,58 +16,44 @@
     <button id="pse">pause</button>
 
     <script>
-        document.getElementById("srt").onclick = function(){
-            let a=Number(document.getElementById("second").innerText)
-           let mytimer =     setInterval(function() {
-                  document.getElementById("second").innerText = ++a;
-                  console.log(a);
+      document.getElementById("srt").onclick = function () {
+        let a = Number(document.getElementById("second").innerText);
+        let mytimer = setInterval(function () {
+          document.getElementById("second").innerText = ++a;
+          console.log(a);
 
-                 if(a==60){
-                     a=0;
-                 }
+          if (a == 60) {
+            a = 0;
+          }
+        }, 1000);
 
-             
-               }, 1000);
- 
-                    
-                let b = Number(document.getElementById("minute").innerText) ;
-            let mytimer2 =     setInterval(function() {
-              
-                  document.getElementById("minute").innerText = ++b;
-                  if(b==60){
-                     b=0;
-                  }
-               },60000);
-               
-              
-                 
-               let c = Number(document.getElementById("hour").innerText) ;
-           let mytimer3 =      setInterval(function() {
-              
-                  document.getElementById("hour").innerText = ++c;
-                  
-               },3600000);
+        let b = Number(document.getElementById("minute").innerText);
+        let mytimer2 = setInterval(function () {
+          document.getElementById("minute").innerText = ++b;
+          if (b == 60) {
+            b = 0;
+          }
+        }, 60000);
 
-             
-               document.getElementById("end").onclick = function(){
-           document.getElementById("second").innerText = "00";
-           document.getElementById("minute").innerText = "00";
-           document.getElementById("hour").innerText = "00";
-             clearInterval(mytimer);   
-             clearInterval(mytimer2);   
-             clearInterval(mytimer3);   
-           
-       }
-               document.getElementById("pse").onclick = function(){
-             clearInterval(mytimer);   
-             clearInterval(mytimer2);   
-             clearInterval(mytimer3);   
-           
-       }
-                   
-        }
+        let c = Number(document.getElementById("hour").innerText);
+        let mytimer3 = setInterval(function () {
+          document.getElementById("hour").innerText = ++c;
+        }, 3600000);
 
-       
+        document.getElementById("end").onclick = function () {
+          document.getElementById("second").innerText = "00";
+          document.getElementById("minute").innerText = "00";
+          document.getElementById("hour").innerText = "00";
+          clearInterval(mytimer);
+          clearInterval(mytimer2);
+          clearInterval(mytimer3);
+        };
+        document.getElementById("pse").onclick = function () {
+          clearInterval(mytimer);
+          clearInterval(mytimer2);
+          clearInterval(mytimer3);
+        };
+      };
     </script>
-</body>
+  </body>
 </html>
